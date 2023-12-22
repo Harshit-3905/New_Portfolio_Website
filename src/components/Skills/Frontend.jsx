@@ -1,21 +1,28 @@
-import { VStack, Heading, Flex } from "@chakra-ui/react";
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
+import { VStack, Heading, Wrap } from "@chakra-ui/react";
 import SkillBlock from "./SkillBlock";
+import {
+  ReactIcon,
+  ReduxIcon,
+  HTMLIcon,
+  CSSIcon,
+  JSIcon,
+  ChakraIcon,
+  BootstrapIcon,
+} from "./Icons";
 
 const Frontend = () => {
   return (
-    <VStack>
+    <VStack height="300px" width="400px" backgroundColor="blue.400">
       <Heading>Frontend</Heading>
-      <Flex>
-        <SkillBlock icon={FaReact} name="React JS" />
-        <SkillBlock icon={SiRedux} name="Redux" />
-        <SkillBlock icon={SiRedux} name="HTML" />
-        <SkillBlock icon={SiRedux} name="CSS" />
-        <SkillBlock icon={SiRedux} name="Javascript" />
-        <SkillBlock icon={SiRedux} name="Bootstrap" />
-        <SkillBlock icon={SiRedux} name="Chakra UI" />
-      </Flex>
+      <Wrap justify="center">
+        <SkillBlock icon={ReactIcon} name="React JS" />
+        <SkillBlock icon={ReduxIcon} name="Redux" />
+        <SkillBlock icon={HTMLIcon} name="HTML" />
+        <SkillBlock icon={CSSIcon} name="CSS" />
+        <SkillBlock icon={JSIcon} name="Javascript" />
+        <SkillBlock icon={ChakraIcon} name="Chakra UI" />
+        <SkillBlock icon={BootstrapIcon} name="Bootstrap" />
+      </Wrap>
     </VStack>
   );
 };
