@@ -8,6 +8,8 @@ const Navbar = () => {
       justifyContent="space-between"
       paddingY={5}
       position="fixed"
+      backgroundColor="black"
+      zIndex={2}
     >
       <Text> Logo</Text>
       <HStack width="40%" justifyContent="space-between">
