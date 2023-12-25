@@ -39,7 +39,9 @@ const Navbar = () => {
           </Text>
         </Link>
       </HStack>
-      <Button borderRadius="3xl">Github Profile</Button>
+      <Link href="https://github.com/Harshit-3905" isExternal>
+        <Button borderRadius="3xl">Github Profile</Button>
+      </Link>
     </HStack>
   );
 };
