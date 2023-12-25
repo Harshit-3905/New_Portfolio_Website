@@ -3,7 +3,15 @@ import PropTypes from "prop-types";
 
 const HireMeCard = (props) => {
   return (
-    <VStack width="20%" align textAlign="center">
+    <VStack
+      width="23%"
+      height="400px"
+      alignItems="center"
+      justifyContent="center"
+      textAlign="center"
+      backgroundColor="green.500"
+      borderRadius="2xl"
+    >
       <Image
         src={props.src}
         height="230px"

@@ -1,4 +1,4 @@
-import { VStack, Heading, Flex } from "@chakra-ui/react";
+import { VStack, Heading, HStack } from "@chakra-ui/react";
 import HireMeCard from "./miscellaneous/HireMeCard";
 
 import communicativeImage from "../assets/Hire/communicative.png";
@@ -8,13 +8,14 @@ import selfMotivatedImage from "../assets/Hire/self-motivation.webp";
 
 const HireMe = () => {
   return (
-    <VStack width="80%" height="90vh">
+    <VStack width="80%" pt={10}>
       <Heading>Why Hire Me?</Heading>
-      <Flex
+      <HStack
         width="100%"
         height="100%"
         justifyContent="space-around"
         alignItems="center"
+        pt={10}
       >
         <HireMeCard
           src={communicativeImage}
@@ -37,7 +38,7 @@ const HireMe = () => {
           heading="Self Motivated"
           description="I put myself into action to achieve my goals."
         />
-      </Flex>
+      </HStack>
     </VStack>
   );
 };
