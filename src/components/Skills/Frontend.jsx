@@ -8,13 +8,19 @@ import {
   JSIcon,
   ChakraIcon,
   BootstrapIcon,
-} from "./Icons";
+} from "../miscellaneous/Icons";
 
 const Frontend = () => {
   return (
-    <VStack height="300px" width="400px" backgroundColor="blue.400">
+    <VStack
+      height="350px"
+      width="400px"
+      backgroundColor="blue.400"
+      borderRadius="2xl"
+      p={3}
+    >
       <Heading>Frontend</Heading>
-      <Wrap justify="center">
+      <Wrap justify="center" pt={4}>
         <SkillBlock icon={ReactIcon} name="React JS" />
         <SkillBlock icon={ReduxIcon} name="Redux" />
         <SkillBlock icon={HTMLIcon} name="HTML" />

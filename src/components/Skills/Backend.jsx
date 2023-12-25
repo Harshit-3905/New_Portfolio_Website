@@ -1,12 +1,18 @@
 import { Heading, VStack, Wrap } from "@chakra-ui/react";
 import SkillBlock from "./SkillBlock";
-import { ExpressIcon, NodeIcon, MongoIcon } from "./Icons";
+import { ExpressIcon, NodeIcon, MongoIcon } from "../miscellaneous/Icons";
 
 const Backend = () => {
   return (
-    <VStack height="300px" width="400px" backgroundColor="blue.400">
+    <VStack
+      height="350px"
+      width="400px"
+      backgroundColor="blue.400"
+      borderRadius="2xl"
+      p={3}
+    >
       <Heading>Backend</Heading>
-      <Wrap justify="center">
+      <Wrap justify="center" pt={4}>
         <SkillBlock icon={NodeIcon} name="Node JS" />
         <SkillBlock icon={ExpressIcon} name="Express JS" />
         <SkillBlock icon={MongoIcon} name="MongoDB" />

@@ -6,13 +6,19 @@ import {
   VSCodeIcon,
   NetlifyIcon,
   PostmanIcon,
-} from "./Icons";
+} from "../miscellaneous/Icons";
 
 const Others = () => {
   return (
-    <VStack height="300px" width="400px" backgroundColor="blue.400">
+    <VStack
+      height="350px"
+      width="400px"
+      backgroundColor="blue.400"
+      borderRadius="2xl"
+      p={3}
+    >
       <Heading>Others</Heading>
-      <Wrap justify="center">
+      <Wrap justify="center" pt={4}>
         <SkillBlock icon={GitIcon} name="Git" />
         <SkillBlock icon={GithubIcon} name="GitHub" />
         <SkillBlock icon={VSCodeIcon} name="VS Code" />
