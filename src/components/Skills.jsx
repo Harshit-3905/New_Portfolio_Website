@@ -7,7 +7,7 @@ import Others from "./Skills/Others";
 const Skills = () => {
   return (
     <VStack id="skills" width="80%" pt={10}>
-      <Heading>Skills</Heading>
+      <Heading pt={10}>Skills</Heading>
       <Wrap width="100%" pt={10} justify="center" spacing={20}>
         <Frontend />
         <Backend />
