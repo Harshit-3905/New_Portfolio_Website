@@ -9,8 +9,9 @@ const HireMeCard = (props) => {
       alignItems="center"
       justifyContent="center"
       textAlign="center"
-      backgroundColor="green.500"
+      backgroundColor="#262626"
       borderRadius="2xl"
+      border="1px solid #FBFBFB"
     >
       <Image
         src={props.src}
@@ -19,8 +20,10 @@ const HireMeCard = (props) => {
         backgroundColor="white"
         borderRadius="2xl"
       ></Image>
-      <Text fontSize="20px">{props.heading}</Text>
-      <Text>{props.description}</Text>
+      <Text fontSize="20px" color="#F56E0F">
+        {props.heading}
+      </Text>
+      <Text px={2}>{props.description}</Text>
     </VStack>
   );
 };
