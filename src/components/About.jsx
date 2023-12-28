@@ -1,12 +1,20 @@
-import { VStack, HStack, Heading, Flex, Text, Image } from "@chakra-ui/react";
+import { VStack, Heading, Flex, Text, Image } from "@chakra-ui/react";
 import MyImage from "../assets/HarshitImage.jpeg";
 
 const About = () => {
   return (
-    <VStack id="about" width="80%" pt={10}>
+    <VStack id="about" width={{ base: "100%", md: "100%", lg: "80%" }} pt={10}>
       <Heading pt={10}>About</Heading>
-      <HStack width="100%" py={20}>
-        <Flex width="50%" alignItems="center" justifyContent="center">
+      <Flex
+        direction={{ base: "column", md: "row", lg: "row" }}
+        width="100%"
+        py={20}
+      >
+        <Flex
+          width={{ base: "100%", md: "40%", lg: "40%" }}
+          alignItems="center"
+          justifyContent="center"
+        >
           <Image
             src={MyImage}
             alt="My Image"
@@ -15,7 +23,12 @@ const About = () => {
             borderRadius="full"
           />
         </Flex>
-        <VStack width="50%" textAlign="left" padding={6} borderRadius="lg">
+        <VStack
+          width={{ base: "100%", md: "60%", lg: "60%" }}
+          textAlign="center"
+          borderRadius="lg"
+          px={10}
+        >
           <Text fontWeight="bold" fontSize="xl">
             Hi, I&apos;m Harshit!
           </Text>
@@ -38,7 +51,7 @@ const About = () => {
             <strong>harshitjoshidev@gmail.com</strong>.
           </Text>
         </VStack>
-      </HStack>
+      </Flex>
     </VStack>
   );
 };
