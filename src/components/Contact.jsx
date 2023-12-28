@@ -24,6 +24,7 @@ const Contact = () => {
         justifyContent="center"
         alignItems="center"
         borderRadius="2xl"
+        border="1px solid #FBFBFB"
       >
         <Flex
           width="50%"
