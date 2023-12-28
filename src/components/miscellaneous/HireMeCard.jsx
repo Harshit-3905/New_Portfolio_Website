@@ -4,8 +4,9 @@ import PropTypes from "prop-types";
 const HireMeCard = (props) => {
   return (
     <VStack
-      width="23%"
+      width={{ base: "90%", md: "30%", lg: "22%" }}
       height="400px"
+      minW="300px"
       alignItems="center"
       justifyContent="center"
       textAlign="center"
