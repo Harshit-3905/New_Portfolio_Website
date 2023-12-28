@@ -5,10 +5,11 @@ const SkillBlock = ({ icon: Icon, name }) => {
   return (
     <HStack
       height="50px"
-      backgroundColor="red.300"
+      backgroundColor="#1B1B1E"
       borderRadius="20px"
       justifyContent="center"
       px={5}
+      border="1px solid #FBFBFB"
     >
       <Icon />
       <Text>{name}</Text>
