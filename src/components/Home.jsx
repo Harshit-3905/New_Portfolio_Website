@@ -6,6 +6,7 @@ import {
   Image,
   Box,
   Link,
+  Flex,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Social from "./miscellaneous/Social";
@@ -15,6 +16,7 @@ import {
   TwitterIcon,
   MailIcon,
 } from "./miscellaneous/Icons";
+import homeAnimated from "../assets/home-animated.gif";
 
 const Home = () => {
   const [typetext, setTypetext] = useState("");
@@ -24,7 +26,7 @@ const Home = () => {
   const textArray = [
     "Full Stack Developer",
     "Open Source Enthusiast",
-    "Competitive Programmer",
+    "Competitive Coder",
   ];
 
   useEffect(() => {
@@ -45,12 +47,23 @@ const Home = () => {
       }
     }, 150);
     return () => clearTimeout(typingTimeout);
-  }, [typetext, textIndex, isDeleting, textArrayIndex]);
+  }, [typetext, textIndex, isDeleting, textArrayIndex, textArray]);
 
   return (
-    <HStack id="home" width="80%" minH="90vh">
-      <VStack width="50%" alignItems="flex-start">
-        <Box alignItems="flex-start" pl={20}>
+    <Flex
+      direction={{ base: "column", md: "row", lg: "row" }}
+      id="home"
+      pt={{ base: "40", md: "0" }}
+      width={{ base: "100%", md: "100%", lg: "80%" }}
+      minH={{ base: "80vh", md: "90vh", lg: "100vh" }}
+      alignItems="center"
+      justifyContent="center"
+    >
+      <VStack
+        width={{ base: "100%", md: "50%", lg: "50%" }}
+        alignItems="flex-start"
+      >
+        <Box alignItems="flex-start" pl={{ base: "5", md: "20" }}>
           <Text fontSize="30px">Hey!</Text>
           <Text fontSize="40px">I&apos;m Harshit Joshi</Text>
           <Text fontSize="30px">{typetext}|</Text>
@@ -79,10 +92,22 @@ const Home = () => {
           </HStack>
         </Box>
       </VStack>
-      <Box width="50%" alignItems="center" justifyContent="center">
-        <Image alt="Photo"></Image>
+      <Box
+        width={{ base: "100%", md: "50%", lg: "50%" }}
+        alignItems="center"
+        justifyContent="center"
+        pl={{ base: "5", md: "20" }}
+      >
+        <Image
+          src={homeAnimated}
+          height="400px"
+          width="400px"
+          backgroundBlendMode={true}
+          backgroundColor="transparent"
+          alt="Photo"
+        ></Image>
       </Box>
-    </HStack>
+    </Flex>
   );
 };
 
