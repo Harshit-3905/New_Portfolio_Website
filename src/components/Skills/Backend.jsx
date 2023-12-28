@@ -5,7 +5,7 @@ import { ExpressIcon, NodeIcon, MongoIcon } from "../miscellaneous/Icons";
 const Backend = () => {
   return (
     <VStack
-      height="350px"
+      minheight="350px"
       width="400px"
       backgroundColor="#262626"
       borderRadius="2xl"
@@ -17,7 +17,6 @@ const Backend = () => {
         <SkillBlock icon={NodeIcon} name="Node JS" />
         <SkillBlock icon={ExpressIcon} name="Express JS" />
         <SkillBlock icon={MongoIcon} name="MongoDB" />
-        <SkillBlock icon={ExpressIcon} name="ExpressJS" />
       </Wrap>
     </VStack>
   );
