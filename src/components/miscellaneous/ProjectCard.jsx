@@ -15,17 +15,26 @@ const ProjectCard = (props) => {
     <VStack
       width="100%"
       minH="450px"
-      backgroundColor="green.500"
+      backgroundColor="#262626"
       borderRadius="2xl"
       padding={3}
       justifyContent="center"
+      border="1px solid #FBFBFB"
     >
-      <Heading fontSize="30px" textAlign="center">
+      <Heading fontSize="30px" textAlign="center" color="#F56E0F">
         {props.name}
       </Heading>
       <HStack pt={5} gap={5}>
-        <Image src={props.image} height="300px"></Image>
-        <VStack gap={3} alignItems="flex-start">
+        <Image
+          src={props.image}
+          height="300px"
+          width={{ base: "100%", md: "100%", lg: "50%" }}
+        ></Image>
+        <VStack
+          gap={3}
+          alignItems="flex-start"
+          width={{ base: "100%", md: "100%", lg: "50%" }}
+        >
           <Text>{props.description}</Text>
           <Text fontSize="20px">Tech Stack :</Text>
           <HStack>
