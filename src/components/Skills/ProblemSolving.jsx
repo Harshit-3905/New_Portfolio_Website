@@ -12,9 +12,10 @@ const ProblemSolving = () => {
     <VStack
       height="350px"
       width="400px"
-      backgroundColor="blue.400"
+      backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
+      border="1px solid #FBFBFB"
     >
       <Heading>Problem Solving</Heading>
       <Wrap justify="center" pt={4}>
