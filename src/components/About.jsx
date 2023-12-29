@@ -27,7 +27,7 @@ const About = () => {
           width={{ base: "100%", md: "60%", lg: "60%" }}
           textAlign="center"
           borderRadius="lg"
-          px={10}
+          px={15}
           gap={5}
         >
           <Text fontWeight="bold" fontSize="xl">
@@ -43,9 +43,11 @@ const About = () => {
             experiences.
           </Text>
           <Text fontSize="lg">
-            As a self-taught developer, I am deeply passionate about web
-            development and problem-solving. My strong background in software
-            development has led me to work on a diverse range of projects.
+            I am a motivated and versatile individual, always eager to take on
+            new challenges. With a passion for learning I am dedicated to
+            delivering high-quality results. With a positive attitude and a
+            growth mindset, I am ready to make a meaningful contribution and
+            achieve great things.
           </Text>
           <Text fontSize="lg">
             Feel free to reach out to me at{" "}

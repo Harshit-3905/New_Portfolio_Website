@@ -10,6 +10,7 @@ const Social = ({ icon: Icon }) => {
       width="55px"
       alignItems="center"
       justifyContent="center"
+      border="1px solid #F56E0F"
     >
       <Icon />
     </Flex>

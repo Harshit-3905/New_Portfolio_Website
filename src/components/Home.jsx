@@ -64,10 +64,20 @@ const Home = () => {
         width={{ base: "100%", md: "50%", lg: "50%" }}
         alignItems="flex-start"
       >
-        <Box alignItems="flex-start" pl={{ base: "5", md: "20" }}>
+        <Box
+          alignItems="flex-start"
+          pl={{ base: "5", md: "20" }}
+          width="100%"
+          color="#FBFBBF"
+        >
           <Text fontSize="30px">Hey!</Text>
-          <Text fontSize="40px">I&apos;m Harshit Joshi</Text>
-          <Text fontSize="30px">{typetext}|</Text>
+          <HStack fontSize="40px">
+            <Text>I&apos;m </Text>
+            <Text color="#F56E0F">Harshit Joshi</Text>
+          </HStack>
+          <Text fontSize="30px" color="#F56E0F">
+            {typetext}|
+          </Text>
           <Link
             href="https://drive.google.com/file/d/1k3ept5svEKYSsri7GLkIaHmsWGHyNNyl/view?usp=sharing"
             isExternal
@@ -81,6 +91,7 @@ const Home = () => {
               border="2px"
               borderColor="#F56E0F"
               backgroundColor="transparent"
+              fontSize="20px"
               rightIcon={<ArrowForwardIcon />}
             >
               Resume

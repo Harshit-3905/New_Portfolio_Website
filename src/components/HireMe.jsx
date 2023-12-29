@@ -11,7 +11,7 @@ const HireMe = () => {
     <VStack width="80%" pt={10}>
       <Heading>Why Hire Me?</Heading>
       <Flex
-        direction={{ base: "column", md: "column", lg: "row" }}
+        direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
         wrap="wrap"
         width="100%"
         height="100%"
