@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Social = ({ icon: Icon }) => {
   return (
     <Flex
-      backgroundColor="#F56E0F"
+      backgroundColor="#151419"
       borderRadius="full"
       height="55px"
       width="55px"

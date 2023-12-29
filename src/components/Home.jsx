@@ -16,6 +16,7 @@ import {
   TwitterIcon,
   MailIcon,
 } from "./miscellaneous/Icons";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import homeAnimated from "../assets/home-animated.gif";
 
 const Home = () => {
@@ -71,7 +72,19 @@ const Home = () => {
             href="https://drive.google.com/file/d/1k3ept5svEKYSsri7GLkIaHmsWGHyNNyl/view?usp=sharing"
             isExternal
           >
-            <Button mt={5}>Resume</Button>
+            <Button
+              mt={5}
+              color="#F56E0F"
+              size="md"
+              height="48px"
+              width="200px"
+              border="2px"
+              borderColor="#F56E0F"
+              backgroundColor="transparent"
+              rightIcon={<ArrowForwardIcon />}
+            >
+              Resume
+            </Button>
           </Link>
           <HStack pt={5} gap={3}>
             <Link

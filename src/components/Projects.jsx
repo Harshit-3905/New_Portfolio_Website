@@ -12,9 +12,9 @@ import {
 
 const Projects = () => {
   return (
-    <VStack id="projects" width="80%" pt={12}>
+    <VStack id="projects" width="80%" pt={20}>
       <Heading pt={5}>Projects</Heading>
-      <VStack width="100%" pt={7} gap={10}>
+      <VStack width="100%" pt={10} gap={10}>
         <ProjectCard
           name="Task Tracker -Your Productivity Companion"
           image={TaskTrackerpic}

@@ -16,6 +16,7 @@ function App() {
       alignItems="center"
       backgroundColor="black"
       color="white"
+      overflowX="hidden"
     >
       <Navbar />
       <Home />

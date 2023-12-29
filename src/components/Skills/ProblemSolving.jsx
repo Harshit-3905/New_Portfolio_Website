@@ -10,7 +10,7 @@ import {
 const ProblemSolving = () => {
   return (
     <VStack
-      minheight="350px"
+      minHeight="350px"
       width="400px"
       backgroundColor="#262626"
       borderRadius="2xl"

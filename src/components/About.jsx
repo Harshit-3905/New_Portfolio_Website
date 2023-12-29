@@ -28,12 +28,13 @@ const About = () => {
           textAlign="center"
           borderRadius="lg"
           px={10}
+          gap={5}
         >
           <Text fontWeight="bold" fontSize="xl">
             Hi, I&apos;m Harshit!
           </Text>
           <Text fontSize="lg">
-            I am a passionate developer and a third-year Information Technology
+            I am a passionate developer and a Third-year Information Technology
             undergraduate student at Kalyani Government Engineering College.
           </Text>
           <Text fontSize="lg">

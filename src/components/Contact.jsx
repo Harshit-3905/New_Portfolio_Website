@@ -1,6 +1,5 @@
 import {
   VStack,
-  HStack,
   Heading,
   FormControl,
   FormLabel,
@@ -15,19 +14,21 @@ import ContactImage from "../assets/ContactImage.png";
 
 const Contact = () => {
   return (
-    <VStack id="contact" width="80%" height="90vh" pt={10}>
-      <Heading>Get in Contact</Heading>
-      <HStack
+    <VStack id="contact" width="80%" minheight="90vh" pt={10}>
+      <Heading pt={10}>Get in Contact</Heading>
+      <Flex
+        direction={{ base: "column", md: "row" }}
         width="100%"
-        height="500px"
+        minheight="500px"
         mt={10}
         justifyContent="center"
         alignItems="center"
         borderRadius="2xl"
         border="1px solid #FBFBFB"
+        py={10}
       >
         <Flex
-          width="50%"
+          width={{ base: "100%", md: "50%", lg: "50%" }}
           height="100%"
           alignItems="center"
           justifyContent="center"
@@ -35,7 +36,7 @@ const Contact = () => {
           <Image src={ContactImage}></Image>
         </Flex>
         <VStack
-          width="50%"
+          width={{ base: "100%", md: "50%", lg: "50%" }}
           height="100%"
           alignItems="center"
           justifyContent="center"
@@ -66,7 +67,7 @@ const Contact = () => {
             </form>
           </Box>
         </VStack>
-      </HStack>
+      </Flex>
     </VStack>
   );
 };

@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <HStack
       height="10%"
-      width={{ base: "100%", md: "100%", lg: "80%" }}
+      width={{ base: "100%", md: "100%", lg: "85%" }}
       justifyContent="space-between"
       padding={5}
       position="fixed"
@@ -48,9 +48,7 @@ const Navbar = () => {
           </Text>
         </Link>
       </HStack>
-      <Link href="https://github.com/Harshit-3905" isExternal>
-        <Button borderRadius="3xl">Github Profile</Button>
-      </Link>
+      <Button borderRadius="3xl">Toggle Mode</Button>
     </HStack>
   );
 };

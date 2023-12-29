@@ -7,13 +7,14 @@ import {
   Button,
   Link,
   Icon,
+  Flex,
 } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
 const ProjectCard = (props) => {
   return (
     <VStack
-      width="100%"
+      width="95%"
       minH="450px"
       backgroundColor="#262626"
       borderRadius="2xl"
@@ -24,7 +25,11 @@ const ProjectCard = (props) => {
       <Heading fontSize="30px" textAlign="center" color="#F56E0F">
         {props.name}
       </Heading>
-      <HStack pt={5} gap={5}>
+      <Flex
+        direction={{ base: "column", md: "columns", lg: "row" }}
+        pt={5}
+        gap={5}
+      >
         <Image
           src={props.image}
           height="300px"
@@ -51,7 +56,7 @@ const ProjectCard = (props) => {
             </Link>
           </HStack>
         </VStack>
-      </HStack>
+      </Flex>
     </VStack>
   );
 };
