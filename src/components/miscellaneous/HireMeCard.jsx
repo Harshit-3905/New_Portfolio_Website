@@ -4,9 +4,8 @@ import PropTypes from "prop-types";
 const HireMeCard = (props) => {
   return (
     <VStack
-      width={{ base: "90%", md: "30%", lg: "20%" }}
-      height="400px"
-      minW="280px"
+      width={{ base: "250px", md: "300px", lg: "350px" }}
+      height={{ base: "300px", md: "350px", lg: "400px" }}
       alignItems="center"
       justifyContent="center"
       textAlign="center"
@@ -16,15 +15,16 @@ const HireMeCard = (props) => {
     >
       <Image
         src={props.src}
-        maxH="230px"
-        maxW="220px"
+        width={{ base: "150px", md: "200px", lg: "220px" }}
         backgroundColor="white"
         borderRadius="2xl"
       ></Image>
-      <Text fontSize="20px" color="#F56E0F">
+      <Text fontSize={{ base: "15px", lg: "20px" }} color="#F56E0F">
         {props.heading}
       </Text>
-      <Text px={2}>{props.description}</Text>
+      <Text px={2} fontSize={{ base: "12px", lg: "15px" }}>
+        {props.description}
+      </Text>
     </VStack>
   );
 };

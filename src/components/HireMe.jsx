@@ -11,14 +11,13 @@ const HireMe = () => {
     <VStack width="80%" pt={10}>
       <Heading>Why Hire Me?</Heading>
       <Flex
-        direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
-        wrap="wrap"
+        wrap={{ base: "wrap", lg: "nowrap" }}
         width="100%"
         height="100%"
         justifyContent="space-around"
         alignItems="center"
         pt={10}
-        gap={{ base: "10", lg: "1" }}
+        gap={{ base: "10", lg: "5" }}
       >
         <HireMeCard
           src={communicativeImage}
