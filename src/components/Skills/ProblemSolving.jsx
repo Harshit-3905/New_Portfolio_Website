@@ -10,14 +10,16 @@ import {
 const ProblemSolving = () => {
   return (
     <VStack
-      minHeight="350px"
+      minHeight="300px"
       width="400px"
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
       border="1px solid #FBFBFB"
     >
-      <Heading>Problem Solving</Heading>
+      <Heading fontSize="30px" color="#F56E0F">
+        Problem Solving
+      </Heading>
       <Wrap justify="center" pt={4}>
         <Link
           href="https://leetcode.com/Harshit_3905/"

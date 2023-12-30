@@ -13,14 +13,16 @@ import {
 const Frontend = () => {
   return (
     <VStack
-      minHeight="350px"
+      minHeight="300px"
       width="400px"
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
       border="1px solid #FBFBFB"
     >
-      <Heading>Frontend</Heading>
+      <Heading fontSize="30px" color="#F56E0F">
+        Frontend
+      </Heading>
       <Wrap justify="center" pt={4}>
         <SkillBlock icon={ReactIcon} name="React JS" />
         <SkillBlock icon={ReduxIcon} name="Redux" />

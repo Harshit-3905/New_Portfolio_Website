@@ -11,14 +11,16 @@ import {
 const Others = () => {
   return (
     <VStack
-      minHeight="350px"
+      minHeight="300px"
       width="400px"
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
       border="1px solid #FBFBFB"
     >
-      <Heading>Others</Heading>
+      <Heading fontSize="30px" color="#F56E0F">
+        Others
+      </Heading>
       <Wrap justify="center" pt={4}>
         <SkillBlock icon={GitIcon} name="Git" />
         <SkillBlock icon={GithubIcon} name="GitHub" />
