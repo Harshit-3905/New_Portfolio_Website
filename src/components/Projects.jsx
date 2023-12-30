@@ -1,6 +1,7 @@
 import { VStack, Heading } from "@chakra-ui/react";
 import ProjectCard from "./miscellaneous/ProjectCard";
 import TaskTrackerpic from "../assets/Projects/TaskTracker.png";
+import PortfolioWebsitepic from "../assets/Projects/PortfolioWebsite.png";
 import {
   ReactIcon,
   ReduxIcon,
@@ -32,7 +33,7 @@ const Projects = () => {
         />
         <ProjectCard
           name="Portfolio Website"
-          image={TaskTrackerpic}
+          image={PortfolioWebsitepic}
           description="Explore my portfolio website – a curated space reflecting my passion for web development. Dive into interactive projects, seamless responsiveness, and a design optimized for every device. This is where technology meets creativity, defining my professional persona. Journey into my world of innovation now!"
           techStack={[ReactIcon, ChakraIcon]}
           liveLink="https://harshitjoshi.netlify.app/"
