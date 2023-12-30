@@ -19,17 +19,30 @@ const ProblemSolving = () => {
     >
       <Heading>Problem Solving</Heading>
       <Wrap justify="center" pt={4}>
-        <Link href="https://leetcode.com/Harshit_3905/" isExternal>
+        <Link
+          href="https://leetcode.com/Harshit_3905/"
+          _hover={{ textDecoration: "none" }}
+          isExternal
+        >
           <SkillBlock icon={LeetCodeIcon} name="LeetCode" />
         </Link>
-        <Link href="https://www.codechef.com/users/harshitjoshi02" isExternal>
+        <Link
+          href="https://www.codechef.com/users/harshitjoshi02"
+          _hover={{ textDecoration: "none" }}
+          isExternal
+        >
           <SkillBlock icon={CodechefIcon} name="Codechef" />
         </Link>
-        <Link href="https://codeforces.com/profile/Harshit_3905" isExternal>
+        <Link
+          href="https://codeforces.com/profile/Harshit_3905"
+          _hover={{ textDecoration: "none" }}
+          isExternal
+        >
           <SkillBlock icon={CodeforcesIcon} name="Codeforces" />
         </Link>
         <Link
           href="https://auth.geeksforgeeks.org/user/harshitjoshileet"
+          _hover={{ textDecoration: "none" }}
           isExternal
         >
           <SkillBlock icon={GFGIcon} name="GeeksForGeeks" />
