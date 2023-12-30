@@ -11,6 +11,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import ContactImage from "../assets/ContactImage.png";
+import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
   return (
@@ -63,7 +64,17 @@ const Contact = () => {
                 <Textarea type="textarea" name="message" rows={4} required />
               </FormControl>
 
-              <Button type="submit">Submit</Button>
+              <Button
+                type="submit"
+                rightIcon={<IoIosSend />}
+                backgroundColor="#F56E0F"
+                borderRadius="xl"
+                border="1px solid #F56E0F"
+                _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
+                height="35px"
+              >
+                Submit
+              </Button>
             </form>
           </Box>
         </VStack>

@@ -10,6 +10,8 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import PropTypes from "prop-types";
+import { CgScreen } from "react-icons/cg";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = (props) => {
   return (
@@ -49,10 +51,28 @@ const ProjectCard = (props) => {
           </HStack>
           <HStack pt={3}>
             <Link href={props.liveLink} isExternal>
-              <Button>Live</Button>
+              <Button
+                rightIcon={<CgScreen />}
+                backgroundColor="#F56E0F"
+                borderRadius="xl"
+                border="1px solid #F56E0F"
+                _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
+                height="35px"
+              >
+                Live
+              </Button>
             </Link>
             <Link href={props.githubLink} isExternal>
-              <Button>Github</Button>
+              <Button
+                rightIcon={<FaGithub />}
+                backgroundColor="#F56E0F"
+                borderRadius="xl"
+                border="1px solid #F56E0F"
+                _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
+                height="35px"
+              >
+                Github
+              </Button>
             </Link>
           </HStack>
         </VStack>

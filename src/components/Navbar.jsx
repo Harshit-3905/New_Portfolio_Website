@@ -1,10 +1,8 @@
 import { HStack, Text, Button, Link, Image } from "@chakra-ui/react";
 import Logo from "../assets/favicon.png";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
-  const hover = () => {
-    return { color: "#F56E0F" };
-  };
   return (
     <HStack
       height="10%"
@@ -22,33 +20,47 @@ const Navbar = () => {
         display={{ base: "none", md: "flex", lg: "flex" }}
         gap={5}
       >
-        <Link href="#home" _hover={hover}>
+        <Link href="#home" _hover={{ color: "#F56E0F" }}>
           <Text fontSize="20px" fontWeight="500">
             Home
           </Text>
         </Link>
-        <Link href="#about" _hover={hover}>
+        <Link href="#about" _hover={{ color: "#F56E0F" }}>
           <Text fontSize="20px" fontWeight="500">
             About
           </Text>
         </Link>
-        <Link href="#skills" _hover={hover}>
+        <Link href="#skills" _hover={{ color: "#F56E0F" }}>
           <Text fontSize="20px" fontWeight="500">
             Skills
           </Text>
         </Link>
-        <Link href="#projects" _hover={hover}>
+        <Link href="#projects" _hover={{ color: "#F56E0F" }}>
           <Text fontSize="20px" fontWeight="500">
             Projects
           </Text>
         </Link>
-        <Link href="#contact" _hover={hover}>
+        <Link href="#contact" _hover={{ color: "#F56E0F" }}>
           <Text fontSize="20px" fontWeight="500">
             Contact
           </Text>
         </Link>
       </HStack>
-      <Button borderRadius="3xl">Toggle Mode</Button>
+      <Link
+        href="https://drive.google.com/file/d/1k3ept5svEKYSsri7GLkIaHmsWGHyNNyl/view?usp=sharing"
+        isExternal
+      >
+        <Button
+          rightIcon={<ArrowForwardIcon />}
+          backgroundColor="#F56E0F"
+          borderRadius="xl"
+          border="1px solid #F56E0F"
+          _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
+          height="35px"
+        >
+          Resume
+        </Button>
+      </Link>
     </HStack>
   );
 };
