@@ -1,4 +1,4 @@
-import { VStack, Heading, Flex, Text, Image } from "@chakra-ui/react";
+import { VStack, HStack, Heading, Flex, Text, Image } from "@chakra-ui/react";
 import MyImage from "../assets/HarshitImage.jpeg";
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
       <Flex
         direction={{ base: "column", md: "row", lg: "row" }}
         width="100%"
-        py={20}
+        py={10}
       >
         <Flex
           width={{ base: "100%", md: "40%", lg: "40%" }}
@@ -49,10 +49,13 @@ const About = () => {
             growth mindset, I am ready to make a meaningful contribution and
             achieve great things.
           </Text>
-          <Text fontSize="lg">
-            Feel free to reach out to me at{" "}
-            <strong>harshitjoshidev@gmail.com</strong>.
-          </Text>
+          <HStack>
+            <Text fontSize="lg">Feel free to reach out to me at </Text>
+            <Text color="#F56E0F" fontSize="lg" fontWeight={600}>
+              harshitjoshidev@gmail.com
+            </Text>
+            .
+          </HStack>
         </VStack>
       </Flex>
     </VStack>
