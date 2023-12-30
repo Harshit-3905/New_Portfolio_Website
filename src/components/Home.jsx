@@ -1,22 +1,8 @@
-import {
-  VStack,
-  HStack,
-  Text,
-  Button,
-  Image,
-  Box,
-  Link,
-  Flex,
-} from "@chakra-ui/react";
+import { VStack, HStack, Text, Image, Box, Link, Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Social from "./miscellaneous/Social";
-import {
-  GithubIcon,
-  LinkedInIcon,
-  TwitterIcon,
-  MailIcon,
-} from "./miscellaneous/Icons";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 import homeAnimated from "../assets/home-animated.gif";
 
 const Home = () => {
@@ -78,40 +64,21 @@ const Home = () => {
           <Text fontSize="30px" color="#F56E0F">
             {typetext}|
           </Text>
-          <Link
-            href="https://drive.google.com/file/d/1k3ept5svEKYSsri7GLkIaHmsWGHyNNyl/view?usp=sharing"
-            isExternal
-          >
-            <Button
-              mt={5}
-              color="#F56E0F"
-              size="md"
-              height="48px"
-              width="200px"
-              border="2px"
-              borderColor="#F56E0F"
-              backgroundColor="transparent"
-              fontSize="20px"
-              rightIcon={<ArrowForwardIcon />}
-            >
-              Resume
-            </Button>
-          </Link>
           <HStack pt={5} gap={3}>
             <Link
               href="https://www.linkedin.com/in/harshit-joshi-40953321b/"
               isExternal
             >
-              <Social icon={LinkedInIcon} />
+              <Social icon={FaLinkedin} />
             </Link>
             <Link href="https://github.com/Harshit-3905" isExternal>
-              <Social icon={GithubIcon} />
+              <Social icon={FaGithub} />
             </Link>
             <Link href="https://twitter.com/Harshit3905" isExternal>
-              <Social icon={TwitterIcon} />
+              <Social icon={FaTwitter} />
             </Link>
             <Link href="#contact">
-              <Social icon={MailIcon} />
+              <Social icon={IoIosMail} />
             </Link>
           </HStack>
         </Box>

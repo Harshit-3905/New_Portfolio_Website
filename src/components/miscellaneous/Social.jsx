@@ -1,7 +1,8 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Icon } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
-const Social = ({ icon: Icon }) => {
+const Social = (props) => {
+  const { icon } = props;
   return (
     <Flex
       backgroundColor="#151419"
@@ -11,14 +12,15 @@ const Social = ({ icon: Icon }) => {
       alignItems="center"
       justifyContent="center"
       border="1px solid #F56E0F"
+      _hover={{ color: "#F56E0F" }}
     >
-      <Icon />
+      <Icon as={icon} boxSize={6} />
     </Flex>
   );
 };
 
 Social.propTypes = {
-  icon: PropTypes.elementType.isRequired,
+  icon: PropTypes.object.isRequired,
 };
 
 export default Social;
