@@ -11,13 +11,18 @@ const ProblemSolving = () => {
   return (
     <VStack
       minHeight="300px"
-      width="400px"
+      width={{ base: "450px", md: "400px" }}
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
       border="1px solid #FBFBFB"
     >
-      <Heading fontSize="30px" color="#F56E0F">
+      <Heading
+        fontSize="30px"
+        color="#F56E0F"
+        textDecoration="underline"
+        textUnderlineOffset={5}
+      >
         Problem Solving
       </Heading>
       <Wrap justify="center" pt={4}>

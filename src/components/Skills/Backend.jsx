@@ -5,14 +5,19 @@ import { ExpressIcon, NodeIcon, MongoIcon } from "../miscellaneous/Icons";
 const Backend = () => {
   return (
     <VStack
-      minheight="300px"
-      width="400px"
+      minHeight="300px"
+      width={{ base: "100%", md: "400px" }}
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
       border="1px solid #FBFBFB"
     >
-      <Heading fontSize="30px" color="#F56E0F">
+      <Heading
+        fontSize="30px"
+        color="#F56E0F"
+        textDecoration="underline"
+        textUnderlineOffset={5}
+      >
         Backend
       </Heading>
       <Wrap justify="center" pt={4}>

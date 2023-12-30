@@ -14,7 +14,7 @@ const Social = (props) => {
       border="1px solid #F56E0F"
       _hover={{ color: "#F56E0F" }}
     >
-      <Icon as={icon} boxSize={6} />
+      <Icon as={icon} boxSize={8} />
     </Flex>
   );
 };

@@ -15,7 +15,12 @@ import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
   return (
-    <VStack id="contact" width="80%" minheight="90vh" pt={10}>
+    <VStack
+      id="contact"
+      width={{ base: "95%", lg: "80%" }}
+      minHeight="90vh"
+      pt={10}
+    >
       <Heading pt={10}>Get in Contact</Heading>
       <Flex
         direction={{ base: "column", md: "row" }}
@@ -34,7 +39,10 @@ const Contact = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Image src={ContactImage}></Image>
+          <Image
+            src={ContactImage}
+            width={{ base: "300px", md: "350px" }}
+          ></Image>
         </Flex>
         <VStack
           width={{ base: "100%", md: "50%", lg: "50%" }}
@@ -42,7 +50,10 @@ const Contact = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Box width="70%">
+          <Box
+            width={{ base: "80%", md: "70%" }}
+            pt={{ base: "40px", md: "0" }}
+          >
             <form>
               <FormControl marginBottom="4">
                 <FormLabel>Name</FormLabel>

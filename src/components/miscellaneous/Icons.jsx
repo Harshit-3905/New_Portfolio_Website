@@ -52,8 +52,8 @@ export const HTMLIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="50"
-    height="50"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
@@ -74,8 +74,8 @@ export const CSSIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="50"
-    height="50"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
@@ -96,8 +96,8 @@ export const JSIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="50"
-    height="50"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
@@ -133,8 +133,8 @@ export const ChakraIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="50"
-    height="50"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <circle cx="24" cy="24" r="20" fill="#4db6ac"></circle>
@@ -150,8 +150,8 @@ export const NodeIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
@@ -170,8 +170,8 @@ export const ExpressIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 64 64"
   >
     <linearGradient
@@ -311,8 +311,8 @@ export const VSCodeIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
@@ -487,8 +487,8 @@ export const CodechefIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
@@ -588,46 +588,18 @@ export const CodeforcesIcon = () => (
   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfklEQVR4nO2ZPU+DQBjHbzoWvsIZu7KgQxlImiblM/iJ1HDutp+hqYMO7rYTfICTkTKUIIsDOELOUAXJBbAYYi/6/JJnhed3f17uBSEAAIA/gXYbqyd065Kr55xcMl7WaJHWKglHi5RqK46RbJAb36k33ixQFUWyQYSR7xZIIiQbpKH5jgQ4kg0CAkcGEvi3CcRPSH25x26wwrm/xLys10fM+Ub5qDUO+UahnCEsnUD0gJ16440CX0WlEwiEke8WwJF0An5D8x0JtN4YBH4KJDDwIxRPNXU7OXM9U8+ZqfOy3iyjqnQ2DlPLoPxCw9Il4E/OnXrjTQKViGVQ6QQ8YeS/EYikE2ANzbcJFAUCJZDAJ/AI+fASM/gKMfiMLuFHxuFPbMJUAsNkjvzGbDS4w1mPXYld243JtZcdPJ2eJ63X8Uw9O3w9MN712xdaK/YQBxyn89QeZEU2M+z9zlwhISbRd2euOGLaSwhJ9D1iiqeaWkiISbSuiQEAANAxeQeqGeHll7A99wAAAABJRU5ErkJggg=="></img>
 );
 
-export const LinkedInIcon = () => (
+export const TailwindIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
-      fill="#0288D1"
-      d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
-    ></path>
-    <path
-      fill="#FFF"
-      d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"
+      fill="#00acc1"
+      d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
     ></path>
   </svg>
-);
-
-export const TwitterIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    x="0px"
-    y="0px"
-    width="48"
-    height="48"
-    viewBox="0 0 48 48"
-  >
-    <path
-      fill="#03A9F4"
-      d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
-    ></path>
-  </svg>
-);
-
-export const MailIcon = () => (
-  <img
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/klEQVR4nO2Y21MbZRjGubeUNqWFhJDdBVJAvbWOVseraqGdhv5XSi1VwikJgSYkBJDitfWq49QLDxwkkLAJOW1O0I5jHYowAo/z7YF8JNlNArQwY96ZdwbC8r3P89vne5mhpqZa1apWtapVLbnuZ3CnJ41kTxo4j21JQ+hJo6tGreQHcM47oWrgHIhDOa1q4F5y76+zFtdTou8Je69UDbT7+Je3A38vnLXIHpW+tfxq0+xa+1fVQMfcBszeddx4GluwJPe3zg31xN7BBz8IYJ08WiZT6hHq+H4TpNunBXT6gi/v8K9Xz1r8Lf8WzO4AOFcELd4UuMl0aQOiidk0zO41fPhj/HdLcm/7rVNP7uPG0yRYux+cJyEKF9tbpgHRxJMszJ51tHtWMt386+DbEv/5yhauuwNSZDzCoXCWtKdcA3ObaJ/bwPXZLMzeGDin/+Dms9S8JbW/+6aEW5IH+OhZVqL+OAJOjgwtnvWUcQdE+sTAE2JgA+bvNtDmE8CNBdExsZK5u74TOW3xt4P/oMMbBONYBeeOFxXOTEhd+hIr4g8NZNE2k0WbLwXOFQJrWyJv4w9LCnsnpp4CPv5pA8zIErgxHuxEQlO8yV3KgBIdSryZiJ/JonU6g1ZfWny9zMgyOryrmbuRndRxxXeFdvDu1BoY2zK48XVw3qSqcMYtiTe5ktoGjkSHpj+dRetUBi2kfRmwrhhM9gBMQwv7nz7PLFlS2K9E/Cc/vwBrWwQzGgTripakrohv1jKgGp1pmb4sXhnGuBMwOdbQPLCITs/qTndop6Tw7vAu3pvhYRpeAutcAzsRL4s6Ed78WGoNA7T4nIFWhb7vqAEykHELMDnDMA75YRqYx83nL1TFf/brn+AIdZsf7HgYHFmRZVJXxBvHBQ0DsvgC+lOF9OmB4hAHMbEKw6Pf0DnF44vgNrVhtvH+bJjETYoMWZGeVEXUjeOSeOOYhgHVi6vQl/8aSoPpgdIw42gUTcMBGPoXoe/7BczwAlodSzANzovUGScPlqzIY1A3jgtoGpNa3UBedNq0okMPdVGUnDEYRngYBgPQW/3QD6yAcfBgyZaZEI5NvYm0U+oSBrQvLk0/f+ghJacAgyMGgz0CvY10TBRzEupN5ExnAobRhLqByqOTosQnD0kZyLDRBPSOBPT2BBrtcTTY4tDb4+Lz+dRNZVAn5ylnahootvOPRCefPhmaT18R75DEN9riaBiJ49pwTGzDqFAxdQN1pqqBk0THmDdQoi+LFw1I4q8NxXB1MCp+bxwTyqZOv83SBiq9uMXo24vQJ+JlA/UDUVwZiIo/L4e6eJZ8nrqBcnY+Jb7g4lJDafEKfVq8aMAaga4/In5NfkeLOjlLOU/VQCU7v/zoUPQHY6hX6FujuNIfge7bCC6T/mZdfEaNegMFQ93AaURH5eIeiY41R18ni7/0SGryWeNITnjuLebOKmmg4p1/zOjoZPGKgbq+MOoehnHxYVh8jqauiCdvSdVAYXTSx975+Re3IDr9uehcIvT7KANfh1H7IIS6vnVcHYoWLABNA6e18xuKRKe+SHQuy9GhxV98EBINXOgN4cJXvPjc4TlaBtjJtJAfHeYUdn6OfqTg4l5S6MvRUejXiuJDeOdLXmzyOXl79dao+j93GV+6i/WmhTey86no6EpEp7Y3R18xQLq2N7Srs0bvqxqoVrWqVa1q/e/qP3Oau9vfx/VtAAAAAElFTkSuQmCC"
-    height="48px"
-    width="48px"
-  ></img>
 );

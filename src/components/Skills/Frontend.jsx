@@ -8,19 +8,25 @@ import {
   JSIcon,
   ChakraIcon,
   BootstrapIcon,
+  TailwindIcon,
 } from "../miscellaneous/Icons";
 
 const Frontend = () => {
   return (
     <VStack
       minHeight="300px"
-      width="400px"
+      width={{ base: "450px", md: "400px" }}
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
       border="1px solid #FBFBFB"
     >
-      <Heading fontSize="30px" color="#F56E0F">
+      <Heading
+        fontSize="30px"
+        color="#F56E0F"
+        textDecoration="underline"
+        textUnderlineOffset={5}
+      >
         Frontend
       </Heading>
       <Wrap justify="center" pt={4}>
@@ -31,6 +37,7 @@ const Frontend = () => {
         <SkillBlock icon={JSIcon} name="Javascript" />
         <SkillBlock icon={ChakraIcon} name="Chakra UI" />
         <SkillBlock icon={BootstrapIcon} name="Bootstrap" />
+        <SkillBlock icon={TailwindIcon} name="Tailwind CSS" />
       </Wrap>
     </VStack>
   );
