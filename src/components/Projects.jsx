@@ -35,8 +35,8 @@ const Projects = () => {
           image={TaskTrackerpic}
           description="Explore my portfolio website – a curated space reflecting my passion for web development. Dive into interactive projects, seamless responsiveness, and a design optimized for every device. This is where technology meets creativity, defining my professional persona. Journey into my world of innovation now!"
           techStack={[ReactIcon, ChakraIcon]}
-          liveLink=""
-          githubLink=""
+          liveLink="https://harshitjoshi.netlify.app/"
+          githubLink="https://github.com/Harshit-3905/Portfolio_Website"
         />
       </VStack>
     </VStack>
