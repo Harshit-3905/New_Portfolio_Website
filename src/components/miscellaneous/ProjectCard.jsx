@@ -67,24 +67,26 @@ const ProjectCard = (props) => {
           <HStack pt={3}>
             <Link href={props.liveLink} isExternal>
               <Button
-                rightIcon={<CgScreen />}
+                fontSize={{ base: "15px", md: "18px" }}
+                rightIcon={<CgScreen boxSize="18px" />}
                 backgroundColor="#F56E0F"
                 borderRadius="xl"
                 border="1px solid #F56E0F"
                 _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
-                height="35px"
+                height="45px"
               >
                 Live
               </Button>
             </Link>
             <Link href={props.githubLink} isExternal>
               <Button
-                rightIcon={<FaGithub />}
+                fontSize={{ base: "15px", md: "18px" }}
+                rightIcon={<FaGithub boxSize="18px" />}
                 backgroundColor="#F56E0F"
                 borderRadius="xl"
                 border="1px solid #F56E0F"
                 _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
-                height="35px"
+                height="45px"
               >
                 Github
               </Button>
