@@ -76,13 +76,14 @@ const Contact = () => {
               </FormControl>
 
               <Button
+                fontSize={{ base: "15px", md: "18px" }}
                 type="submit"
                 rightIcon={<IoIosSend />}
                 backgroundColor="#F56E0F"
                 borderRadius="xl"
                 border="1px solid #F56E0F"
                 _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
-                height="35px"
+                height="45px"
               >
                 Submit
               </Button>
