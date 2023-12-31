@@ -68,7 +68,9 @@ const ProjectCard = (props) => {
             <Link href={props.liveLink} isExternal>
               <Button
                 fontSize={{ base: "15px", md: "18px" }}
-                rightIcon={<CgScreen boxSize="18px" />}
+                rightIcon={
+                  <Icon as={CgScreen} boxSize={{ base: "15px", md: "18px" }} />
+                }
                 backgroundColor="#F56E0F"
                 borderRadius="xl"
                 border="1px solid #F56E0F"
@@ -81,7 +83,9 @@ const ProjectCard = (props) => {
             <Link href={props.githubLink} isExternal>
               <Button
                 fontSize={{ base: "15px", md: "18px" }}
-                rightIcon={<FaGithub boxSize="18px" />}
+                rightIcon={
+                  <Icon as={FaGithub} boxSize={{ base: "15px", md: "18px" }} />
+                }
                 backgroundColor="#F56E0F"
                 borderRadius="xl"
                 border="1px solid #F56E0F"

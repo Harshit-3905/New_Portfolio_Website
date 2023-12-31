@@ -20,7 +20,7 @@ const Social = (props) => {
 };
 
 Social.propTypes = {
-  icon: PropTypes.object.isRequired,
+  icon: PropTypes.func.isRequired,
 };
 
 export default Social;

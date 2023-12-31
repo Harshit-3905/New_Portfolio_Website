@@ -19,7 +19,7 @@ const SkillBlock = ({ icon, name }) => {
 };
 
 SkillBlock.propTypes = {
-  icon: PropTypes.object.isRequired,
+  icon: PropTypes.elementType.isRequired,
   name: PropTypes.string.isRequired,
 };
 

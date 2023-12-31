@@ -7,7 +7,6 @@ import {
   Button,
   Image,
   Flex,
-  Textarea,
   Box,
 } from "@chakra-ui/react";
 import ContactImage from "../assets/ContactImage.png";
