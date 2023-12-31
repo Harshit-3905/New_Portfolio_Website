@@ -6,7 +6,7 @@ const Backend = () => {
   return (
     <VStack
       minHeight="300px"
-      width={{ base: "100%", md: "400px" }}
+      width={{ base: "450px", md: "390px" }}
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
