@@ -12,8 +12,39 @@ import {
 } from "@chakra-ui/react";
 import ContactImage from "../assets/ContactImage.png";
 import { IoIosSend } from "react-icons/io";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@chakra-ui/react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState(" ");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  const toast = useToast();
+  const Submit = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+    await emailjs.send(
+      "service_tof52bh",
+      "template_bpe2k9o",
+      { name, email, subject, message },
+      "aRd8Bo25JM1hECd9W"
+    );
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+    toast({
+      title: "Message Sent Successfully",
+      description: "I will get back to you as soon as possible",
+      status: "success",
+      duration: 3000,
+      isClosable: true,
+    });
+    setLoading(false);
+  };
   return (
     <VStack
       id="contact"
@@ -25,7 +56,7 @@ const Contact = () => {
       <Flex
         direction={{ base: "column", md: "row" }}
         width="100%"
-        minheight="500px"
+        minHeight="500px"
         mt={10}
         justifyContent="center"
         alignItems="center"
@@ -57,22 +88,47 @@ const Contact = () => {
             <form>
               <FormControl marginBottom="4">
                 <FormLabel>Name</FormLabel>
-                <Input type="text" name="name" required />
+                <Input
+                  type="text"
+                  name="name"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </FormControl>
 
               <FormControl marginBottom="4">
                 <FormLabel>Email</FormLabel>
-                <Input type="email" name="email" required />
+                <Input
+                  type="email"
+                  name="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </FormControl>
 
               <FormControl marginBottom="4">
                 <FormLabel>Subject</FormLabel>
-                <Input type="text" name="subject" required />
+                <Input
+                  type="text"
+                  name="subject"
+                  required
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                />
               </FormControl>
 
               <FormControl marginBottom="4">
                 <FormLabel>Message</FormLabel>
-                <Textarea type="textarea" name="message" rows={4} required />
+                <Input
+                  type="textarea"
+                  name="message"
+                  rows={4}
+                  required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
               </FormControl>
 
               <Button
@@ -84,6 +140,8 @@ const Contact = () => {
                 border="1px solid #F56E0F"
                 _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
                 height="45px"
+                onClick={Submit}
+                isLoading={loading}
               >
                 Submit
               </Button>
