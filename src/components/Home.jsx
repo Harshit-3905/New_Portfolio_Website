@@ -56,12 +56,12 @@ const Home = () => {
           width="100%"
           color="#FBFBBF"
         >
-          <Text fontSize="30px">Hey!</Text>
-          <HStack fontSize="40px">
+          <Text fontSize={{ base: "30px", md: "35px" }}>Hey!</Text>
+          <HStack fontSize={{ base: "40px", md: "45px" }}>
             <Text>I&apos;m </Text>
             <Text color="#F56E0F">Harshit Joshi</Text>
           </HStack>
-          <Text fontSize="30px" color="#F56E0F">
+          <Text fontSize={{ base: "30px", md: "35px" }} color="#F56E0F">
             {typetext}|
           </Text>
           <HStack pt={5} gap={3}>

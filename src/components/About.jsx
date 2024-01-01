@@ -50,7 +50,7 @@ const About = () => {
             growth mindset, I am ready to make a meaningful contribution and
             achieve great things.
           </Text>
-          <Flex flexDir={{ base: "column", md: "row" }} columnGap={2}>
+          <Flex flexDir={{ base: "column", lg: "row" }} columnGap={2}>
             <Text fontSize="lg">Feel free to reach out to me at </Text>
             <Text color="#F56E0F" fontSize="lg" fontWeight={600}>
               harshitjoshidev@gmail.com
