@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import HireMe from "./components/HireMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Starfield from "react-starfield";
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
       color="white"
       overflowX="hidden"
     >
+      <Starfield
+        starCount={2000}
+        starColor={[255, 255, 255]}
+        speedFactor={0.07}
+        backgroundColor="black"
+      />
       <Navbar />
       <Home />
       <About />
