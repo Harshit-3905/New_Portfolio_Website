@@ -56,7 +56,8 @@ const Navbar = () => {
           borderRadius="xl"
           border="1px solid #F56E0F"
           _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
-          height="35px"
+          height="38px"
+          fontSize={{ base: "12px", md: "16px" }}
         >
           Resume
         </Button>
