@@ -2,6 +2,7 @@ import { VStack, Heading } from "@chakra-ui/react";
 import ProjectCard from "./miscellaneous/ProjectCard";
 import TaskTrackerpic from "../assets/Projects/TaskTracker.png";
 import PortfolioWebsitepic from "../assets/Projects/PortfolioWebsite.png";
+import BinaryBlogspic from "../assets/Projects/BinaryBlogs.png";
 import {
   ReactIcon,
   ReduxIcon,
@@ -9,6 +10,8 @@ import {
   ExpressIcon,
   MongoIcon,
   ChakraIcon,
+  TailwindIcon,
+  AppwriteIcon,
 } from "./miscellaneous/Icons";
 
 const Projects = () => {
@@ -30,6 +33,14 @@ const Projects = () => {
           ]}
           liveLink="https://task-tracker-us2h.onrender.com/"
           githubLink="https://github.com/Harshit-3905/Task_Tracker"
+        />
+        <ProjectCard
+          name="Binary Blogs - A Blogging Website"
+          image={BinaryBlogspic}
+          description="Crafted a dynamic blogging platform using React and Tailwind CSS, ensuring a seamless and visually appealing user experience. Integrated Appwrite for efficient backend functionalities, enhancing data management and user interactions. This project showcases a commitment to building engaging web applications with a focus on both aesthetics and functionality."
+          techStack={[ReactIcon, TailwindIcon, AppwriteIcon]}
+          liveLink="https://binary-blogs.onrender.com/"
+          githubLink="https://github.com/Harshit-3905/Binary-Blogs"
         />
         <ProjectCard
           name="Portfolio Website"
