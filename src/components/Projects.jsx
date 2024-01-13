@@ -20,7 +20,7 @@ const Projects = () => {
       <Heading pt={5}>Projects</Heading>
       <VStack width="100%" pt={10} gap={10}>
         <ProjectCard
-          name="Task Tracker -Your Productivity Companion"
+          name="Task Tracker - Your Productivity Companion"
           image={TaskTrackerpic}
           description="Meet your ultimate productivity ally – Task Tracker! Streamline tasks, conquer goals, and boost focus with advanced features like the Pomodoro timer. This isn't just a task manager; it's your shortcut to success. Ready to elevate your productivity game? Task Tracker is here to help you soar!"
           techStack={[
