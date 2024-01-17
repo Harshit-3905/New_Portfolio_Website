@@ -13,7 +13,7 @@ import {
 import PropTypes from "prop-types";
 import { CgScreen } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
-import { Bounce, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const ProjectCard = (props) => {
   return (
@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
       justifyContent="center"
       border="1px solid #FBFBFB"
     >
-      <Bounce>
+      <Fade>
         <Heading
           fontSize={{ base: "20px", md: "35px" }}
           textAlign="center"
@@ -35,7 +35,7 @@ const ProjectCard = (props) => {
         >
           {props.name}
         </Heading>
-      </Bounce>
+      </Fade>
       <Flex
         direction={{ base: "column", md: "columns", lg: "row" }}
         pt={5}
