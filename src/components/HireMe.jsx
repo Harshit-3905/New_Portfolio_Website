@@ -9,7 +9,13 @@ import selfMotivatedImage from "../assets/Hire/self-motivation.webp";
 const HireMe = () => {
   return (
     <VStack width="80%" pt={10}>
-      <Heading>Why Hire Me?</Heading>
+      <Heading
+        color="#F56E0F"
+        textDecoration="underline"
+        textUnderlineOffset={5}
+      >
+        Why Hire Me?
+      </Heading>
       <Flex
         wrap={{ base: "wrap", lg: "nowrap" }}
         width="100%"

@@ -1,10 +1,18 @@
 import { VStack, Heading, Flex, Text, Image } from "@chakra-ui/react";
 import MyImage from "../assets/HarshitImage.jpeg";
+import Tilt from "react-parallax-tilt";
 
 const About = () => {
   return (
     <VStack id="about" width={{ base: "100%", md: "100%", lg: "80%" }} pt={10}>
-      <Heading pt={10}>About</Heading>
+      <Heading
+        py={10}
+        color="#F56E0F"
+        textDecoration="underline"
+        textUnderlineOffset={5}
+      >
+        About
+      </Heading>
       <Flex
         direction={{ base: "column", md: "row", lg: "row" }}
         width="100%"
@@ -15,13 +23,15 @@ const About = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Image
-            src={MyImage}
-            alt="My Image"
-            width="300"
-            height="300"
-            borderRadius="full"
-          />
+          <Tilt>
+            <Image
+              src={MyImage}
+              alt="My Image"
+              width="350"
+              height="350"
+              borderRadius="full"
+            />
+          </Tilt>
         </Flex>
         <VStack
           width={{ base: "100%", md: "60%", lg: "60%" }}

@@ -51,7 +51,14 @@ const Contact = () => {
       minHeight="90vh"
       pt={10}
     >
-      <Heading pt={10}>Get in Contact</Heading>
+      <Heading
+        pt={10}
+        color="#F56E0F"
+        textDecoration="underline"
+        textUnderlineOffset={5}
+      >
+        Get in Contact
+      </Heading>
       <Flex
         direction={{ base: "column", md: "row" }}
         width="100%"
