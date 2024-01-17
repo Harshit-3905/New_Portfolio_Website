@@ -1,9 +1,10 @@
-import { VStack, HStack, Text, Image, Box, Link, Flex } from "@chakra-ui/react";
+import { VStack, HStack, Text, Box, Link, Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Social from "./miscellaneous/Social";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import homeAnimated from "../assets/home-animated.gif";
+import homeAnimatedwebm from "../assets/homeanimated.webm";
+import homeAnimatedmp4 from "../assets/homeanimated.mp4";
 import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
@@ -93,14 +94,10 @@ const Home = () => {
         pl={{ base: "5", md: "20" }}
       >
         <Fade direction="right">
-          <Image
-            src={homeAnimated}
-            height="400px"
-            width="400px"
-            backgroundBlendMode={true}
-            backgroundColor="transparent"
-            alt="Photo"
-          />
+          <video autoPlay loop muted playsInline height="400px" width="400px">
+            <source src={homeAnimatedwebm} type="video/webm" />
+            <source src={homeAnimatedmp4} type="video/mp4" />
+          </video>
         </Fade>
       </Box>
     </Flex>
