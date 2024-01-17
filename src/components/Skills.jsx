@@ -3,25 +3,36 @@ import Frontend from "./Skills/Frontend";
 import Backend from "./Skills/Backend";
 import ProblemSolving from "./Skills/ProblemSolving";
 import Others from "./Skills/Others";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const Skills = () => {
   return (
     <VStack id="skills" width="80%" pt={10}>
-      <Heading
-        pt={10}
-        color="#F56E0F"
-        textDecoration="underline"
-        textUnderlineOffset={5}
-      >
-        Skills
-      </Heading>
+      <Zoom>
+        <Heading
+          pt={10}
+          color="#F56E0F"
+          textDecoration="underline"
+          textUnderlineOffset={5}
+        >
+          Skills
+        </Heading>
+      </Zoom>
       <Wrap width="100%" pt={10} justify="center" spacing={20}>
-        <Frontend />
-        <Backend />
+        <Fade direction="left">
+          <Frontend />
+        </Fade>
+        <Fade direction="right">
+          <Backend />
+        </Fade>
       </Wrap>
       <Wrap width="100%" pt={10} justify="center" spacing={20}>
-        <ProblemSolving />
-        <Others />
+        <Fade direction="left">
+          <ProblemSolving />
+        </Fade>
+        <Fade direction="right">
+          <Others />
+        </Fade>
       </Wrap>
     </VStack>
   );

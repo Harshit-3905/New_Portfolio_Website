@@ -4,6 +4,7 @@ import Social from "./miscellaneous/Social";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import homeAnimated from "../assets/home-animated.gif";
+import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
   const [typetext, setTypetext] = useState("");
@@ -56,31 +57,33 @@ const Home = () => {
           width="100%"
           color="#FBFBBF"
         >
-          <Text fontSize={{ base: "30px", md: "35px" }}>Hey!</Text>
-          <HStack fontSize={{ base: "40px", md: "45px" }}>
-            <Text>I&apos;m </Text>
-            <Text color="#F56E0F">Harshit Joshi</Text>
-          </HStack>
-          <Text fontSize={{ base: "30px", md: "35px" }} color="#F56E0F">
-            {typetext}|
-          </Text>
-          <HStack pt={5} gap={3}>
-            <Link
-              href="https://www.linkedin.com/in/harshit-joshi-40953321b/"
-              isExternal
-            >
-              <Social icon={FaLinkedin} />
-            </Link>
-            <Link href="https://github.com/Harshit-3905" isExternal>
-              <Social icon={FaGithub} />
-            </Link>
-            <Link href="https://twitter.com/Harshit3905" isExternal>
-              <Social icon={FaTwitter} />
-            </Link>
-            <Link href="#contact">
-              <Social icon={IoIosMail} />
-            </Link>
-          </HStack>
+          <Fade direction="left">
+            <Text fontSize={{ base: "30px", md: "35px" }}>Hey!</Text>
+            <HStack fontSize={{ base: "40px", md: "45px" }}>
+              <Text>I&apos;m </Text>
+              <Text color="#F56E0F">Harshit Joshi</Text>
+            </HStack>
+            <Text fontSize={{ base: "30px", md: "35px" }} color="#F56E0F">
+              {typetext}|
+            </Text>
+            <HStack pt={5} gap={3}>
+              <Link
+                href="https://www.linkedin.com/in/harshit-joshi-40953321b/"
+                isExternal
+              >
+                <Social icon={FaLinkedin} />
+              </Link>
+              <Link href="https://github.com/Harshit-3905" isExternal>
+                <Social icon={FaGithub} />
+              </Link>
+              <Link href="https://twitter.com/Harshit3905" isExternal>
+                <Social icon={FaTwitter} />
+              </Link>
+              <Link href="#contact">
+                <Social icon={IoIosMail} />
+              </Link>
+            </HStack>
+          </Fade>
         </Box>
       </VStack>
       <Box
@@ -89,14 +92,16 @@ const Home = () => {
         justifyContent="center"
         pl={{ base: "5", md: "20" }}
       >
-        <Image
-          src={homeAnimated}
-          height="400px"
-          width="400px"
-          backgroundBlendMode={true}
-          backgroundColor="transparent"
-          alt="Photo"
-        ></Image>
+        <Fade direction="right">
+          <Image
+            src={homeAnimated}
+            height="400px"
+            width="400px"
+            backgroundBlendMode={true}
+            backgroundColor="transparent"
+            alt="Photo"
+          />
+        </Fade>
       </Box>
     </Flex>
   );

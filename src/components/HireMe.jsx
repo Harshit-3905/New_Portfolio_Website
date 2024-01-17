@@ -1,21 +1,23 @@
 import { VStack, Heading, Flex } from "@chakra-ui/react";
 import HireMeCard from "./miscellaneous/HireMeCard";
-
 import communicativeImage from "../assets/Hire/communicative.png";
 import collaborativeImage from "../assets/Hire/collaborative.webp";
 import workEthicImage from "../assets/Hire/work-ethic.webp";
 import selfMotivatedImage from "../assets/Hire/self-motivation.webp";
+import { Zoom } from "react-awesome-reveal";
 
 const HireMe = () => {
   return (
     <VStack width="80%" pt={10}>
-      <Heading
-        color="#F56E0F"
-        textDecoration="underline"
-        textUnderlineOffset={5}
-      >
-        Why Hire Me?
-      </Heading>
+      <Zoom>
+        <Heading
+          color="#F56E0F"
+          textDecoration="underline"
+          textUnderlineOffset={5}
+        >
+          Why Hire Me?
+        </Heading>
+      </Zoom>
       <Flex
         wrap={{ base: "wrap", lg: "nowrap" }}
         width="100%"
@@ -29,7 +31,7 @@ const HireMe = () => {
           src={communicativeImage}
           heading="Communicative"
           description="I balance talking and listening hence ensuring effective
-                        communication."
+          communication."
         />
         <HireMeCard
           src={collaborativeImage}

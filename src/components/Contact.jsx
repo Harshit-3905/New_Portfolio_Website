@@ -14,6 +14,7 @@ import { IoIosSend } from "react-icons/io";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
+import { Zoom, Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -51,14 +52,16 @@ const Contact = () => {
       minHeight="90vh"
       pt={10}
     >
-      <Heading
-        pt={10}
-        color="#F56E0F"
-        textDecoration="underline"
-        textUnderlineOffset={5}
-      >
-        Get in Contact
-      </Heading>
+      <Zoom>
+        <Heading
+          pt={10}
+          color="#F56E0F"
+          textDecoration="underline"
+          textUnderlineOffset={5}
+        >
+          Get in Contact
+        </Heading>
+      </Zoom>
       <Flex
         direction={{ base: "column", md: "row" }}
         width="100%"
@@ -76,10 +79,9 @@ const Contact = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Image
-            src={ContactImage}
-            width={{ base: "300px", md: "350px" }}
-          ></Image>
+          <Fade direction="left">
+            <Image src={ContactImage} width={{ base: "300px", md: "350px" }} />
+          </Fade>
         </Flex>
         <VStack
           width={{ base: "100%", md: "50%", lg: "50%" }}
@@ -91,67 +93,69 @@ const Contact = () => {
             width={{ base: "80%", md: "70%" }}
             pt={{ base: "40px", md: "0" }}
           >
-            <form>
-              <FormControl marginBottom="4">
-                <FormLabel>Name</FormLabel>
-                <Input
-                  type="text"
-                  name="name"
-                  required
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </FormControl>
+            <Fade direction="right">
+              <form>
+                <FormControl marginBottom="4">
+                  <FormLabel>Name</FormLabel>
+                  <Input
+                    type="text"
+                    name="name"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </FormControl>
 
-              <FormControl marginBottom="4">
-                <FormLabel>Email</FormLabel>
-                <Input
-                  type="email"
-                  name="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </FormControl>
+                <FormControl marginBottom="4">
+                  <FormLabel>Email</FormLabel>
+                  <Input
+                    type="email"
+                    name="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </FormControl>
 
-              <FormControl marginBottom="4">
-                <FormLabel>Subject</FormLabel>
-                <Input
-                  type="text"
-                  name="subject"
-                  required
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
-                />
-              </FormControl>
+                <FormControl marginBottom="4">
+                  <FormLabel>Subject</FormLabel>
+                  <Input
+                    type="text"
+                    name="subject"
+                    required
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                  />
+                </FormControl>
 
-              <FormControl marginBottom="4">
-                <FormLabel>Message</FormLabel>
-                <Input
-                  type="textarea"
-                  name="message"
-                  rows={4}
-                  required
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-              </FormControl>
+                <FormControl marginBottom="4">
+                  <FormLabel>Message</FormLabel>
+                  <Input
+                    type="textarea"
+                    name="message"
+                    rows={4}
+                    required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
+                </FormControl>
 
-              <Button
-                fontSize={{ base: "15px", md: "18px" }}
-                type="submit"
-                rightIcon={<IoIosSend />}
-                backgroundColor="#F56E0F"
-                borderRadius="xl"
-                border="1px solid #F56E0F"
-                _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
-                height="45px"
-                onClick={Submit}
-                isLoading={loading}
-              >
-                Submit
-              </Button>
-            </form>
+                <Button
+                  fontSize={{ base: "15px", md: "18px" }}
+                  type="submit"
+                  rightIcon={<IoIosSend />}
+                  backgroundColor="#F56E0F"
+                  borderRadius="xl"
+                  border="1px solid #F56E0F"
+                  _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
+                  height="45px"
+                  onClick={Submit}
+                  isLoading={loading}
+                >
+                  Submit
+                </Button>
+              </form>
+            </Fade>
           </Box>
         </VStack>
       </Flex>

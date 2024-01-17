@@ -13,6 +13,7 @@ import {
 import PropTypes from "prop-types";
 import { CgScreen } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
+import { Bounce, Fade } from "react-awesome-reveal";
 
 const ProjectCard = (props) => {
   return (
@@ -22,80 +23,97 @@ const ProjectCard = (props) => {
       backgroundColor="#262626"
       borderRadius="2xl"
       padding={3}
+      alignItems="center"
       justifyContent="center"
       border="1px solid #FBFBFB"
     >
-      <Heading
-        fontSize={{ base: "20px", md: "35px" }}
-        textAlign="center"
-        color="#F56E0F"
-      >
-        {props.name}
-      </Heading>
+      <Bounce>
+        <Heading
+          fontSize={{ base: "20px", md: "35px" }}
+          textAlign="center"
+          color="#F56E0F"
+        >
+          {props.name}
+        </Heading>
+      </Bounce>
       <Flex
         direction={{ base: "column", md: "columns", lg: "row" }}
         pt={5}
         gap={5}
+        alignItems="center"
+        justifyContent="center"
       >
-        <Image
-          src={props.image}
-          height={{ base: "200px", md: "300px" }}
-          width={{ base: "100%", md: "100%", lg: "50%" }}
-        ></Image>
+        <Flex width={{ base: "100%", md: "100%", lg: "50%" }}>
+          <Fade direction="left">
+            <Image
+              src={props.image}
+              height={{ base: "200px", md: "300px" }}
+              width="100%"
+            />
+          </Fade>
+        </Flex>
         <VStack
           gap={3}
           textAlign={{ base: "center", md: "left" }}
           alignItems={{ base: "center", md: "flex-start" }}
           width={{ base: "100%", md: "100%", lg: "50%" }}
         >
-          <Text fontSize={{ base: "15px", md: "16px" }}>
-            {props.description}
-          </Text>
-          <Text
-            fontSize={{ base: "18px", md: "22px" }}
-            color="#F56E0F"
-            textDecoration="underline"
-            textUnderlineOffset={5}
-          >
-            Tech Stack:
-          </Text>
-          <Wrap>
-            {props.techStack.map((tech) => (
-              <Icon as={tech} key={tech} />
-            ))}
-          </Wrap>
-          <HStack pt={3}>
-            <Link href={props.liveLink} isExternal>
-              <Button
-                fontSize={{ base: "15px", md: "18px" }}
-                rightIcon={
-                  <Icon as={CgScreen} boxSize={{ base: "15px", md: "18px" }} />
-                }
-                backgroundColor="#F56E0F"
-                borderRadius="xl"
-                border="1px solid #F56E0F"
-                _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
-                height="45px"
-              >
-                Live
-              </Button>
-            </Link>
-            <Link href={props.githubLink} isExternal>
-              <Button
-                fontSize={{ base: "15px", md: "18px" }}
-                rightIcon={
-                  <Icon as={FaGithub} boxSize={{ base: "15px", md: "18px" }} />
-                }
-                backgroundColor="#F56E0F"
-                borderRadius="xl"
-                border="1px solid #F56E0F"
-                _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
-                height="45px"
-              >
-                Github
-              </Button>
-            </Link>
-          </HStack>
+          <Fade direction="right">
+            <Text fontSize={{ base: "15px", md: "16px" }}>
+              {props.description}
+            </Text>
+            <Text
+              fontSize={{ base: "18px", md: "22px" }}
+              color="#F56E0F"
+              textDecoration="underline"
+              textUnderlineOffset={5}
+            >
+              Tech Stack:
+            </Text>
+            <Wrap>
+              {props.techStack.map((tech) => (
+                <Icon as={tech} key={tech} />
+              ))}
+            </Wrap>
+            <HStack pt={3}>
+              <Link href={props.liveLink} isExternal>
+                <Button
+                  fontSize={{ base: "15px", md: "18px" }}
+                  rightIcon={
+                    <Icon
+                      as={CgScreen}
+                      boxSize={{ base: "15px", md: "18px" }}
+                    />
+                  }
+                  backgroundColor="#F56E0F"
+                  borderRadius="xl"
+                  border="1px solid #F56E0F"
+                  _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
+                  height="45px"
+                >
+                  Live
+                </Button>
+              </Link>
+              <Link href={props.githubLink} isExternal>
+                <Button
+                  fontSize={{ base: "15px", md: "18px" }}
+                  rightIcon={
+                    <Icon
+                      as={FaGithub}
+                      boxSize={{ base: "15px", md: "18px" }}
+                    />
+                  }
+                  backgroundColor="#F56E0F"
+                  borderRadius="xl"
+                  border="1px solid #F56E0F"
+                  _hover={{ color: "#F56E0F", backgroundColor: "#262626" }}
+                  height="45px"
+                >
+                  Github
+                </Button>
+              </Link>
+            </HStack>
+          </Fade>
         </VStack>
       </Flex>
     </VStack>

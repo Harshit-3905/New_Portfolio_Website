@@ -13,18 +13,21 @@ import {
   TailwindIcon,
   AppwriteIcon,
 } from "./miscellaneous/Icons";
+import { Zoom } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
     <VStack id="projects" width="80%" pt={20}>
-      <Heading
-        pt={5}
-        color="#F56E0F"
-        textDecoration="underline"
-        textUnderlineOffset={5}
-      >
-        Projects
-      </Heading>
+      <Zoom>
+        <Heading
+          pt={5}
+          color="#F56E0F"
+          textDecoration="underline"
+          textUnderlineOffset={5}
+        >
+          Projects
+        </Heading>
+      </Zoom>
       <VStack width="100%" pt={10} gap={10}>
         <ProjectCard
           name="Task Tracker - Your Productivity Companion"

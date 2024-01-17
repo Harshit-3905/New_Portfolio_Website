@@ -1,5 +1,6 @@
 import { VStack, Image, Text } from "@chakra-ui/react";
 import PropTypes from "prop-types";
+import { Fade } from "react-awesome-reveal";
 
 const HireMeCard = (props) => {
   return (
@@ -13,18 +14,20 @@ const HireMeCard = (props) => {
       borderRadius="2xl"
       border="1px solid #FBFBFB"
     >
-      <Image
-        src={props.src}
-        width={{ base: "200px", md: "200px", lg: "220px" }}
-        backgroundColor="white"
-        borderRadius="2xl"
-      ></Image>
-      <Text fontSize={{ base: "18px", lg: "20px" }} color="#F56E0F">
-        {props.heading}
-      </Text>
-      <Text px={2} fontSize={{ base: "14px", lg: "15px" }}>
-        {props.description}
-      </Text>
+      <Fade>
+        <Image
+          src={props.src}
+          width={{ base: "200px", md: "200px", lg: "220px" }}
+          backgroundColor="white"
+          borderRadius="2xl"
+        />
+        <Text fontSize={{ base: "18px", lg: "20px" }} color="#F56E0F">
+          {props.heading}
+        </Text>
+        <Text px={2} fontSize={{ base: "14px", lg: "15px" }}>
+          {props.description}
+        </Text>
+      </Fade>
     </VStack>
   );
 };
