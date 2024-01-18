@@ -1,6 +1,6 @@
 import { VStack, Heading, Flex } from "@chakra-ui/react";
 import HireMeCard from "./miscellaneous/HireMeCard";
-import communicativeImage from "../assets/Hire/communicative.png";
+import communicativeImage from "../assets/Hire/communicative.webp";
 import collaborativeImage from "../assets/Hire/collaborative.webp";
 import workEthicImage from "../assets/Hire/work-ethic.webp";
 import selfMotivatedImage from "../assets/Hire/self-motivation.webp";

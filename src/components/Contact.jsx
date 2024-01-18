@@ -9,7 +9,7 @@ import {
   Flex,
   Box,
 } from "@chakra-ui/react";
-import ContactImage from "../assets/ContactImage.png";
+import ContactImage from "../assets/ContactImage.webp";
 import { IoIosSend } from "react-icons/io";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";

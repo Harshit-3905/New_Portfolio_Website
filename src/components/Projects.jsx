@@ -1,8 +1,8 @@
 import { VStack, Heading } from "@chakra-ui/react";
 import ProjectCard from "./miscellaneous/ProjectCard";
-import TaskTrackerpic from "../assets/Projects/TaskTracker.png";
-import PortfolioWebsitepic from "../assets/Projects/PortfolioWebsite.png";
-import BinaryBlogspic from "../assets/Projects/BinaryBlogs.png";
+import TaskTrackerpic from "../assets/Projects/TaskTracker.webp";
+import PortfolioWebsitepic from "../assets/Projects/PortfolioWebsite.webp";
+import BinaryBlogspic from "../assets/Projects/BinaryBlogs.webp";
 import {
   ReactIcon,
   ReduxIcon,

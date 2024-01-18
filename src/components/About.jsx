@@ -1,5 +1,5 @@
 import { VStack, Heading, Flex, Text, Image } from "@chakra-ui/react";
-import MyImage from "../assets/HarshitImage.jpeg";
+import MyImage from "../assets/HarshitImage.webp";
 import Tilt from "react-parallax-tilt";
 import { Fade, Zoom } from "react-awesome-reveal";
 
