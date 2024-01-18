@@ -20,30 +20,30 @@ const Navbar = () => {
           width="40%"
           justifyContent="space-between"
           display={{ base: "none", md: "flex", lg: "flex" }}
-          gap={5}
+          gap={10}
         >
           <Link href="#home" _hover={{ color: "#F56E0F" }}>
-            <Text fontSize="20px" fontWeight="500">
+            <Text fontSize="22px" fontWeight="500">
               Home
             </Text>
           </Link>
           <Link href="#about" _hover={{ color: "#F56E0F" }}>
-            <Text fontSize="20px" fontWeight="500">
+            <Text fontSize="22px" fontWeight="500">
               About
             </Text>
           </Link>
           <Link href="#skills" _hover={{ color: "#F56E0F" }}>
-            <Text fontSize="20px" fontWeight="500">
+            <Text fontSize="22px" fontWeight="500">
               Skills
             </Text>
           </Link>
           <Link href="#projects" _hover={{ color: "#F56E0F" }}>
-            <Text fontSize="20px" fontWeight="500">
+            <Text fontSize="22px" fontWeight="500">
               Projects
             </Text>
           </Link>
           <Link href="#contact" _hover={{ color: "#F56E0F" }}>
-            <Text fontSize="20px" fontWeight="500">
+            <Text fontSize="22px" fontWeight="500">
               Contact
             </Text>
           </Link>
