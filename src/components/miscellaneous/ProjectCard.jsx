@@ -49,6 +49,7 @@ const ProjectCard = (props) => {
               src={props.image}
               height={{ base: "200px", md: "300px" }}
               width="100%"
+              alt={props.name}
             />
           </Fade>
         </Flex>

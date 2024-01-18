@@ -80,7 +80,11 @@ const Contact = () => {
           justifyContent="center"
         >
           <Fade direction="left">
-            <Image src={ContactImage} width={{ base: "300px", md: "350px" }} />
+            <Image
+              src={ContactImage}
+              width={{ base: "300px", md: "350px" }}
+              alt="Contact"
+            />
           </Fade>
         </Flex>
         <VStack

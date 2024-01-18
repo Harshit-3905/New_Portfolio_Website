@@ -20,6 +20,7 @@ const HireMeCard = (props) => {
           width={{ base: "200px", md: "200px", lg: "220px" }}
           backgroundColor="white"
           borderRadius="2xl"
+          alt={props.heading}
         />
         <Text fontSize={{ base: "18px", lg: "20px" }} color="#F56E0F">
           {props.heading}

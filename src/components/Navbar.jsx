@@ -15,7 +15,7 @@ const Navbar = () => {
       backgroundColor="#262626"
     >
       <Fade direction="down">
-        <Image src={Logo} alt="Logo" height="40px" width="40px"></Image>
+        <Image src={Logo} alt="Logo" height="40px" width="40px" />
         <HStack
           width="40%"
           justifyContent="space-between"
