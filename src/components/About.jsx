@@ -6,7 +6,7 @@ import { Fade, Zoom } from "react-awesome-reveal";
 const About = () => {
   return (
     <VStack id="about" width={{ base: "100%", md: "100%", lg: "80%" }} pt={10}>
-      <Zoom>
+      <Zoom triggerOnce>
         <Heading
           py={10}
           color="#F56E0F"
@@ -27,13 +27,14 @@ const About = () => {
           justifyContent="center"
         >
           <Tilt>
-            <Fade direction="left">
+            <Fade direction="left" triggerOnce>
               <Image
                 src={MyImage}
                 alt="My Image"
                 width="350"
                 height="350"
                 borderRadius="full"
+                loading="lazy"
               />
             </Fade>
           </Tilt>
@@ -46,7 +47,7 @@ const About = () => {
           pt={{ base: "10", md: "0" }}
           gap={5}
         >
-          <Fade direction="right">
+          <Fade direction="right" triggerOnce>
             <Text fontWeight="bold" fontSize="xl">
               Hi, I&apos;m Harshit!
             </Text>

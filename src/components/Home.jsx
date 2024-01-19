@@ -58,7 +58,7 @@ const Home = () => {
           width="100%"
           color="#FBFBBF"
         >
-          <Fade direction="left">
+          <Fade direction="left" triggerOnce>
             <Text fontSize={{ base: "30px", md: "35px" }}>Hey!</Text>
             <HStack fontSize={{ base: "40px", md: "45px" }}>
               <Text>I&apos;m </Text>
@@ -93,7 +93,7 @@ const Home = () => {
         justifyContent="center"
         pl={{ base: "5", md: "20" }}
       >
-        <Fade direction="right">
+        <Fade direction="right" triggerOnce>
           <video autoPlay loop muted playsInline height="400px" width="400px">
             <source src={homeAnimatedwebm} type="video/webm" />
             <source src={homeAnimatedmp4} type="video/mp4" />

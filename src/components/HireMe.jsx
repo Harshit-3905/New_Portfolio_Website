@@ -9,7 +9,7 @@ import { Zoom } from "react-awesome-reveal";
 const HireMe = () => {
   return (
     <VStack width="80%" pt={10}>
-      <Zoom>
+      <Zoom triggerOnce>
         <Heading
           color="#F56E0F"
           textDecoration="underline"

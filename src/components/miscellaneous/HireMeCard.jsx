@@ -14,13 +14,14 @@ const HireMeCard = (props) => {
       borderRadius="2xl"
       border="1px solid #FBFBFB"
     >
-      <Fade>
+      <Fade triggerOnce>
         <Image
           src={props.src}
           width={{ base: "200px", md: "200px", lg: "220px" }}
           backgroundColor="white"
           borderRadius="2xl"
           alt={props.heading}
+          loading="lazy"
         />
         <Text fontSize={{ base: "18px", lg: "20px" }} color="#F56E0F">
           {props.heading}

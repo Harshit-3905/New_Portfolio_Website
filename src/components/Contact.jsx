@@ -52,7 +52,7 @@ const Contact = () => {
       minHeight="90vh"
       pt={10}
     >
-      <Zoom>
+      <Zoom triggerOnce>
         <Heading
           pt={10}
           color="#F56E0F"
@@ -79,11 +79,12 @@ const Contact = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Fade direction="left">
+          <Fade direction="left" triggerOnce>
             <Image
               src={ContactImage}
               width={{ base: "300px", md: "350px" }}
               alt="Contact"
+              loading="lazy"
             />
           </Fade>
         </Flex>
@@ -97,7 +98,7 @@ const Contact = () => {
             width={{ base: "80%", md: "70%" }}
             pt={{ base: "40px", md: "0" }}
           >
-            <Fade direction="right">
+            <Fade direction="right" triggerOnce>
               <form>
                 <FormControl marginBottom="4">
                   <FormLabel>Name</FormLabel>

@@ -14,7 +14,7 @@ const Navbar = () => {
       zIndex={2}
       backgroundColor="#262626"
     >
-      <Fade direction="down">
+      <Fade direction="down" triggerOnce>
         <Image src={Logo} alt="Logo" height="40px" width="40px" />
         <HStack
           width="40%"

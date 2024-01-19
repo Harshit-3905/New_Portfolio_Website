@@ -18,7 +18,7 @@ import { Zoom } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <VStack id="projects" width="80%" pt={20}>
-      <Zoom>
+      <Zoom triggerOnce>
         <Heading
           pt={5}
           color="#F56E0F"

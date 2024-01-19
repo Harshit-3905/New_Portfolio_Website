@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
       justifyContent="center"
       border="1px solid #FBFBFB"
     >
-      <Fade>
+      <Fade triggerOnce>
         <Heading
           fontSize={{ base: "20px", md: "35px" }}
           textAlign="center"
@@ -44,12 +44,13 @@ const ProjectCard = (props) => {
         justifyContent="center"
       >
         <Flex width={{ base: "100%", md: "100%", lg: "50%" }}>
-          <Fade direction="left">
+          <Fade direction="left" triggerOnce>
             <Image
               src={props.image}
               height={{ base: "200px", md: "300px" }}
               width="100%"
               alt={props.name}
+              loading="lazy"
             />
           </Fade>
         </Flex>
@@ -59,7 +60,7 @@ const ProjectCard = (props) => {
           alignItems={{ base: "center", md: "flex-start" }}
           width={{ base: "100%", md: "100%", lg: "50%" }}
         >
-          <Fade direction="right">
+          <Fade direction="right" triggerOnce>
             <Text fontSize={{ base: "15px", md: "16px" }}>
               {props.description}
             </Text>
