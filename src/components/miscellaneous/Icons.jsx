@@ -3,8 +3,8 @@ export const ReactIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="50"
-    height="50"
+    width="45"
+    height="45"
     viewBox="0 0 100 100"
   >
     <circle cx="50" cy="50" r="7" fill="#39c1d7"></circle>
@@ -28,8 +28,8 @@ export const ReduxIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="40"
-    height="40"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
@@ -113,8 +113,8 @@ export const BootstrapIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="50"
-    height="50"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
@@ -227,8 +227,8 @@ export const MongoIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
@@ -256,8 +256,8 @@ export const GitIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
@@ -272,8 +272,8 @@ export const GithubIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <linearGradient
@@ -333,8 +333,8 @@ export const VSCodeIcon = () => (
 export const NetlifyIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 256 226"
   >
     <path
@@ -355,8 +355,8 @@ export const NetlifyIcon = () => (
 export const PostmanIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="40"
-    height="40"
+    width="45"
+    height="45"
     viewBox="0 0 256 256"
   >
     <path
@@ -471,8 +471,8 @@ export const GFGIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="48"
-    height="48"
+    width="45"
+    height="45"
     viewBox="0 0 48 48"
   >
     <path
@@ -585,7 +585,38 @@ export const CodechefIcon = () => (
 );
 
 export const CodeforcesIcon = () => (
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfklEQVR4nO2ZPU+DQBjHbzoWvsIZu7KgQxlImiblM/iJ1HDutp+hqYMO7rYTfICTkTKUIIsDOELOUAXJBbAYYi/6/JJnhed3f17uBSEAAIA/gXYbqyd065Kr55xcMl7WaJHWKglHi5RqK46RbJAb36k33ixQFUWyQYSR7xZIIiQbpKH5jgQ4kg0CAkcGEvi3CcRPSH25x26wwrm/xLys10fM+Ub5qDUO+UahnCEsnUD0gJ16440CX0WlEwiEke8WwJF0An5D8x0JtN4YBH4KJDDwIxRPNXU7OXM9U8+ZqfOy3iyjqnQ2DlPLoPxCw9Il4E/OnXrjTQKViGVQ6QQ8YeS/EYikE2ANzbcJFAUCJZDAJ/AI+fASM/gKMfiMLuFHxuFPbMJUAsNkjvzGbDS4w1mPXYld243JtZcdPJ2eJ63X8Uw9O3w9MN712xdaK/YQBxyn89QeZEU2M+z9zlwhISbRd2euOGLaSwhJ9D1iiqeaWkiISbSuiQEAANAxeQeqGeHll7A99wAAAABJRU5ErkJggg=="></img>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="40"
+    height="40"
+    viewBox="0 0 24 24"
+    id="code-forces"
+  >
+    <path
+      fill="#2196F3"
+      d="M13.5,21c0.828,0,1.5-0.672,1.5-1.5v-15C15,3.672,14.328,3,13.5,3h-3C9.673,3,9,3.672,9,4.5v15c0,0.828,0.673,1.5,1.5,1.5H13.5L13.5,21z"
+    ></path>
+    <path
+      fill="#1D83D4"
+      d="M12,3h-1.5C9.673,3,9,3.672,9,4.5v15c0,0.828,0.673,1.5,1.5,1.5H12V3L12,3z"
+    ></path>
+    <path
+      fill="#FFC107"
+      d="M0,19.5C0,20.328,0.673,21,1.5,21h3C5.328,21,6,20.328,6,19.5V9c0-0.828-0.672-1.5-1.5-1.5h-3C0.673,7.5,0,8.172,0,9V19.5L0,19.5z"
+    ></path>
+    <path
+      fill="#DEA806"
+      d="M3.25,7.5H1.5C0.673,7.5,0,8.172,0,9v10.5C0,20.328,0.673,21,1.5,21h1.75V7.5L3.25,7.5z"
+    ></path>
+    <path
+      fill="#F44336"
+      d="M24,19.5V12c0-0.828-0.672-1.5-1.5-1.5h-3c-0.828,0-1.5,0.672-1.5,1.5v7.5c0,0.828,0.672,1.5,1.5,1.5h3C23.328,21,24,20.328,24,19.5L24,19.5z"
+    ></path>
+    <path
+      fill="#D43A2F"
+      d="M21,10.5h-1.5c-0.828,0-1.5,0.672-1.5,1.5v7.5c0,0.828,0.672,1.5,1.5,1.5H21V10.5L21,10.5z"
+    ></path>
+  </svg>
 );
 
 export const TailwindIcon = () => (
