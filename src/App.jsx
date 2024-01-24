@@ -3,9 +3,9 @@ import { VStack } from "@chakra-ui/react";
 import PreLoader from "./components/PreLoader";
 import Starfield from "react-starfield";
 import { Suspense, lazy } from "react";
+import Home from "./components/Home";
 
 const Navbar = lazy(() => import("./components/Navbar"));
-const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
 const Skills = lazy(() => import("./components/Skills"));
 const Projects = lazy(() => import("./components/Projects"));
