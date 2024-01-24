@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import Social from "./miscellaneous/Social";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-// import homeAnimatedwebm from "../assets/homeanimated.webm";
-// import homeAnimatedmp4 from "../assets/homeanimated.mp4";
+import homeAnimatedwebm from "../assets/homeanimated.webm";
+import homeAnimatedmp4 from "../assets/homeanimated.mp4";
 import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
@@ -93,12 +93,12 @@ const Home = () => {
         justifyContent="center"
         pl={{ base: "5", md: "20" }}
       >
-        {/* <Fade direction="right" triggerOnce>
+        <Fade direction="right" triggerOnce>
           <video autoPlay loop muted playsInline height="400px" width="400px">
             <source src={homeAnimatedwebm} type="video/webm" />
             <source src={homeAnimatedmp4} type="video/mp4" />
           </video>
-        </Fade> */}
+        </Fade>
       </Box>
     </Flex>
   );
