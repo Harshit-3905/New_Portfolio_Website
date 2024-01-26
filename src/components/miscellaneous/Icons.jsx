@@ -28,9 +28,9 @@ export const ReduxIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="45"
-    height="45"
-    viewBox="0 0 48 48"
+    width="40"
+    height="40"
+    viewBox="0 0 45 45"
   >
     <path
       fill="#7e57c2"
