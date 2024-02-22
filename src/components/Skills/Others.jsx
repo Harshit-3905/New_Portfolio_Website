@@ -6,6 +6,7 @@ import {
   VSCodeIcon,
   NetlifyIcon,
   PostmanIcon,
+  DockerIcon,
 } from "../miscellaneous/Icons";
 
 const Others = () => {
@@ -27,6 +28,7 @@ const Others = () => {
         Others
       </Heading>
       <Wrap justify="center" pt={4}>
+        <SkillBlock icon={DockerIcon} name="Docker" />
         <SkillBlock icon={GitIcon} name="Git" />
         <SkillBlock icon={GithubIcon} name="GitHub" />
         <SkillBlock icon={VSCodeIcon} name="VS Code" />
