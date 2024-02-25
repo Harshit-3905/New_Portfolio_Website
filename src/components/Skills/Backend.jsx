@@ -5,6 +5,7 @@ import {
   NodeIcon,
   MongoIcon,
   AppwriteIcon,
+  RedisIcon,
 } from "../miscellaneous/Icons";
 
 const Backend = () => {
@@ -30,6 +31,7 @@ const Backend = () => {
         <SkillBlock icon={ExpressIcon} name="Express JS" />
         <SkillBlock icon={MongoIcon} name="MongoDB" />
         <SkillBlock icon={AppwriteIcon} name="Appwrite" />
+        <SkillBlock icon={RedisIcon} name="Redis" />
       </Wrap>
     </VStack>
   );
