@@ -48,7 +48,7 @@ const Navbar = () => {
             </Text>
           </Link>
         </HStack>
-        <Link
+        {/* <Link
           href="https://drive.google.com/file/d/1k3ept5svEKYSsri7GLkIaHmsWGHyNNyl/view?usp=sharing"
           isExternal
         >
@@ -63,7 +63,7 @@ const Navbar = () => {
           >
             Resume
           </Button>
-        </Link>
+        </Link> */}
       </Fade>
     </HStack>
   );
