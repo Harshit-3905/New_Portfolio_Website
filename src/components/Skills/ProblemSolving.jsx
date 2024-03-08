@@ -11,7 +11,7 @@ const ProblemSolving = () => {
   return (
     <VStack
       minHeight="300px"
-      width={{ base: "100%", md: "390px" }}
+      width={{ base: "100%", md: "400px" }}
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}

@@ -3,19 +3,17 @@ import SkillBlock from "./SkillBlock";
 import {
   ReactIcon,
   ReduxIcon,
-  HTMLIcon,
-  CSSIcon,
   JSIcon,
   ChakraIcon,
-  BootstrapIcon,
   TailwindIcon,
+  NextJsIcon,
 } from "../miscellaneous/Icons";
 
 const Frontend = () => {
   return (
     <VStack
       minHeight="300px"
-      width={{ base: "100%", md: "390px" }}
+      width={{ base: "100%", md: "400px" }}
       backgroundColor="#262626"
       borderRadius="2xl"
       p={3}
@@ -30,13 +28,11 @@ const Frontend = () => {
         Frontend
       </Heading>
       <Wrap justify="center" pt={4}>
+        <SkillBlock icon={NextJsIcon} name="Next JS" />
         <SkillBlock icon={ReactIcon} name="React JS" />
         <SkillBlock icon={ReduxIcon} name="Redux" />
-        <SkillBlock icon={HTMLIcon} name="HTML" />
-        <SkillBlock icon={CSSIcon} name="CSS" />
         <SkillBlock icon={JSIcon} name="Javascript" />
         <SkillBlock icon={ChakraIcon} name="Chakra UI" />
-        <SkillBlock icon={BootstrapIcon} name="Bootstrap" />
         <SkillBlock icon={TailwindIcon} name="Tailwind CSS" />
       </Wrap>
     </VStack>
