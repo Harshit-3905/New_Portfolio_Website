@@ -6,6 +6,7 @@ import {
   MongoIcon,
   AppwriteIcon,
   RedisIcon,
+  PostgresqlIcon,
 } from "../miscellaneous/Icons";
 
 const Backend = () => {
@@ -32,6 +33,7 @@ const Backend = () => {
         <SkillBlock icon={MongoIcon} name="MongoDB" />
         <SkillBlock icon={AppwriteIcon} name="Appwrite" />
         <SkillBlock icon={RedisIcon} name="Redis" />
+        <SkillBlock icon={PostgresqlIcon} name="PostgreSQL" />
       </Wrap>
     </VStack>
   );
