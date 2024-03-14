@@ -7,6 +7,7 @@ import {
   ChakraIcon,
   TailwindIcon,
   NextJsIcon,
+  TypescriptIcon,
 } from "../miscellaneous/Icons";
 
 const Frontend = () => {
@@ -32,6 +33,7 @@ const Frontend = () => {
         <SkillBlock icon={ReactIcon} name="React JS" />
         <SkillBlock icon={ReduxIcon} name="Redux" />
         <SkillBlock icon={JSIcon} name="Javascript" />
+        <SkillBlock icon={TypescriptIcon} name="Typescript" />
         <SkillBlock icon={ChakraIcon} name="Chakra UI" />
         <SkillBlock icon={TailwindIcon} name="Tailwind CSS" />
       </Wrap>
