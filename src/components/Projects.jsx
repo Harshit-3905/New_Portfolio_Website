@@ -1,22 +1,16 @@
-import { VStack, Heading } from "@chakra-ui/react";
-import ProjectCard from "./miscellaneous/ProjectCard";
-import TaskTrackerpic from "../assets/Projects/TaskTracker.webp";
-import PortfolioWebsitepic from "../assets/Projects/PortfolioWebsite.webp";
-import BinaryBlogspic from "../assets/Projects/BinaryBlogs.webp";
-import VideoTubePic from "../assets/Projects/VideoTube.webp";
 import {
-  ReactIcon,
-  ReduxIcon,
-  NodeIcon,
-  ExpressIcon,
-  MongoIcon,
-  ChakraIcon,
-  TailwindIcon,
-  AppwriteIcon,
-  RedisIcon,
-  DockerIcon,
-} from "./miscellaneous/Icons";
+  VStack,
+  Heading,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+} from "@chakra-ui/react";
 import { Zoom } from "react-awesome-reveal";
+import Frontend from "./Project/Frontend";
+import Backend from "./Project/Backend";
+import FullStack from "./Project/FullStack";
 
 const Projects = () => {
   return (
@@ -31,47 +25,42 @@ const Projects = () => {
           Projects
         </Heading>
       </Zoom>
-      <VStack width="100%" pt={10} gap={10}>
-        <ProjectCard
-          name="VideoTube - Youtube Backend Clone"
-          image={VideoTubePic}
-          description="Video Tube, a YouTube backend clone, boasts robust features including user authentication with JWT tokens, advanced data manipulation with MongoDB aggregation pipelines, and optimized performance with pagination. Leveraging Redis for caching and Docker for containerization, it ensures seamless data interaction, prioritizing efficiency and security in video content handling."
-          techStack={[NodeIcon, ExpressIcon, MongoIcon, RedisIcon, DockerIcon]}
-          liveLink="https://documenter.getpostman.com/view/25112902/2s9Yywdz2v"
-          githubLink="https://github.com/Harshit-3905/VideoTube-Backend"
-        />
-        <ProjectCard
-          name="Task Tracker - Your Productivity Companion"
-          image={TaskTrackerpic}
-          description="Meet your ultimate productivity ally – Task Tracker! Streamline tasks, conquer goals, and boost focus with advanced features like the Pomodoro timer. This isn't just a task manager; it's your shortcut to success. Ready to elevate your productivity game? Task Tracker is here to help you soar!"
-          techStack={[
-            ReactIcon,
-            ReduxIcon,
-            NodeIcon,
-            ExpressIcon,
-            MongoIcon,
-            ChakraIcon,
-          ]}
-          liveLink="https://task-tracker-us2h.onrender.com/"
-          githubLink="https://github.com/Harshit-3905/Task_Tracker"
-        />
-        <ProjectCard
-          name="Binary Blogs - A Blogging Website"
-          image={BinaryBlogspic}
-          description="Crafted a dynamic blogging platform using React and Tailwind CSS, ensuring a seamless and visually appealing user experience. Integrated Appwrite for efficient backend functionalities, enhancing data management and user interactions. This project showcases a commitment to building engaging web applications with a focus on both aesthetics and functionality."
-          techStack={[ReactIcon, TailwindIcon, AppwriteIcon]}
-          liveLink="https://binary-blogs.onrender.com/"
-          githubLink="https://github.com/Harshit-3905/Binary-Blogs"
-        />
-        <ProjectCard
-          name="Portfolio Website"
-          image={PortfolioWebsitepic}
-          description="Explore my portfolio website – a curated space reflecting my passion for web development. Dive into interactive projects, seamless responsiveness, and a design optimized for every device. This is where technology meets creativity, defining my professional persona. Journey into my world of innovation now!"
-          techStack={[ReactIcon, ChakraIcon]}
-          liveLink="https://harshitjoshi.netlify.app/"
-          githubLink="https://github.com/Harshit-3905/Portfolio_Website"
-        />
-      </VStack>
+      <Tabs variant="soft-rounded" align="center" pt={5} mt={5}>
+        <TabList>
+          <Tab
+            _selected={{ color: "#F56E0F", bg: "#262626" }}
+            textColor="white"
+            fontSize={{ base: 15, md: 20 }}
+          >
+            Frontend
+          </Tab>
+          <Tab
+            _selected={{ color: "#F56E0F", bg: "#262626" }}
+            textColor="white"
+            fontSize={{ base: 15, md: 20 }}
+          >
+            Backend
+          </Tab>
+          <Tab
+            _selected={{ color: "#F56E0F", bg: "#262626" }}
+            textColor="white"
+            fontSize={{ base: 15, md: 20 }}
+          >
+            Full Stack
+          </Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <Frontend />
+          </TabPanel>
+          <TabPanel>
+            <Backend />
+          </TabPanel>
+          <TabPanel>
+            <FullStack />
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
     </VStack>
   );
 };

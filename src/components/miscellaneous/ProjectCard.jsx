@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
     >
       <Fade triggerOnce>
         <Heading
-          fontSize={{ base: "20px", md: "35px" }}
+          fontSize={{ base: "20px", md: "30px" }}
           textAlign="center"
           color="#F56E0F"
         >
