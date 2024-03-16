@@ -26,29 +26,31 @@ const Projects = () => {
         </Heading>
       </Zoom>
       <Tabs variant="soft-rounded" align="center" pt={5} mt={5}>
-        <TabList>
-          <Tab
-            _selected={{ color: "#F56E0F", bg: "#262626" }}
-            textColor="white"
-            fontSize={{ base: 15, md: 20 }}
-          >
-            Frontend
-          </Tab>
-          <Tab
-            _selected={{ color: "#F56E0F", bg: "#262626" }}
-            textColor="white"
-            fontSize={{ base: 15, md: 20 }}
-          >
-            Backend
-          </Tab>
-          <Tab
-            _selected={{ color: "#F56E0F", bg: "#262626" }}
-            textColor="white"
-            fontSize={{ base: 15, md: 20 }}
-          >
-            Full Stack
-          </Tab>
-        </TabList>
+        <Zoom triggerOnce>
+          <TabList>
+            <Tab
+              _selected={{ color: "#F56E0F", bg: "#262626" }}
+              textColor="white"
+              fontSize={{ base: 15, md: 20 }}
+            >
+              Frontend
+            </Tab>
+            <Tab
+              _selected={{ color: "#F56E0F", bg: "#262626" }}
+              textColor="white"
+              fontSize={{ base: 15, md: 20 }}
+            >
+              Backend
+            </Tab>
+            <Tab
+              _selected={{ color: "#F56E0F", bg: "#262626" }}
+              textColor="white"
+              fontSize={{ base: 15, md: 20 }}
+            >
+              Full Stack
+            </Tab>
+          </TabList>
+        </Zoom>
         <TabPanels>
           <TabPanel>
             <Frontend />
