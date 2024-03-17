@@ -2,11 +2,13 @@ import { VStack } from "@chakra-ui/react";
 import ProjectCard from "../miscellaneous/ProjectCard";
 import BinaryBlogspic from "../../assets/Projects/BinaryBlogs.webp";
 import PortfolioWebsitepic from "../../assets/Projects/PortfolioWebsite.webp";
+import AudioAlleyPic from "../../assets/Projects/AudioAlley.webp";
 import {
   ReactIcon,
   TailwindIcon,
   AppwriteIcon,
   ChakraIcon,
+  NextJsIcon,
 } from "../miscellaneous/Icons";
 
 const Frontend = () => {
@@ -27,6 +29,14 @@ const Frontend = () => {
         techStack={[ReactIcon, ChakraIcon]}
         liveLink="https://harshitjoshi.netlify.app/"
         githubLink="https://github.com/Harshit-3905/Portfolio_Website"
+      />
+      <ProjectCard
+        name="Audio Alley"
+        image={AudioAlleyPic}
+        description="Audio Alley is a cutting-edge music edtech platform showcased through a dynamic website developed using Next.js. Leveraging the power of Aceternity UI, the site offers an immersive user experience with stunning visuals and intuitive navigation. Whether exploring music theory or mastering instruments, Audio Alley provides a seamless platform"
+        techStack={[NextJsIcon, TailwindIcon]}
+        liveLink="https://audioalley.vercel.app/"
+        githubLink="https://github.com/Harshit-3905/AudioAlley"
       />
     </VStack>
   );
