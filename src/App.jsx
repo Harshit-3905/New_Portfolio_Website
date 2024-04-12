@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import HireMe from "./components/HireMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Github from "./components/Github";
 import PreLoader from "./components/PreLoader";
 import Starfield from "react-starfield";
 import { useState, useEffect } from "react";
@@ -38,6 +39,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Github />
       <Projects />
       <HireMe />
       <Contact />
