@@ -52,7 +52,7 @@ const About = () => {
               Hi, I&apos;m Harshit!
             </Text>
             <Text fontSize="lg">
-              I am a passionate developer and a Third-year Information
+              I am a passionate developer and a Fourth-year Information
               Technology undergraduate student at Kalyani Government Engineering
               College.
             </Text>
