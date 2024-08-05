@@ -8,6 +8,7 @@ import {
   RedisIcon,
   PostgresqlIcon,
   AWSIcon,
+  PrismaIcon,
 } from "../miscellaneous/Icons";
 
 const Backend = () => {
@@ -32,10 +33,11 @@ const Backend = () => {
         <SkillBlock icon={NodeIcon} name="Node JS" />
         <SkillBlock icon={ExpressIcon} name="Express JS" />
         <SkillBlock icon={MongoIcon} name="MongoDB" />
+        <SkillBlock icon={PostgresqlIcon} name="PostgreSQL" />
         <SkillBlock icon={AppwriteIcon} name="Appwrite" />
         <SkillBlock icon={RedisIcon} name="Redis" />
-        <SkillBlock icon={PostgresqlIcon} name="PostgreSQL" />
-        <SkillBlock icon={AWSIcon} name="Amazon Web Services" />
+        <SkillBlock icon={PrismaIcon} name="Prisma" />
+        <SkillBlock icon={AWSIcon} name="AWS" />
       </Wrap>
     </VStack>
   );
