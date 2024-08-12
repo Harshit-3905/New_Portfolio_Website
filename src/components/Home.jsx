@@ -1,43 +1,13 @@
 import { VStack, HStack, Text, Box, Link, Flex } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
 import Social from "./miscellaneous/Social";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import homeAnimatedwebm from "../assets/homeanimated.webm";
 import homeAnimatedmp4 from "../assets/homeanimated.mp4";
 import { Fade } from "react-awesome-reveal";
+import Typewriter from "./miscellaneous/Typewriter";
 
 const Home = () => {
-  const [typetext, setTypetext] = useState("");
-  const [textArrayIndex, setTextArrayIndex] = useState(0);
-  const [textIndex, setTextIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const textArray = [
-    "Full Stack Developer",
-    "Open Source Enthusiast",
-    "Competitive Coder",
-  ];
-
-  useEffect(() => {
-    const typingTimeout = setTimeout(() => {
-      if (textIndex === textArray[textArrayIndex].length - 1) {
-        setIsDeleting(true);
-      }
-      if (textIndex === 0 && isDeleting) {
-        setIsDeleting(false);
-        setTextArrayIndex((prevIndex) => (prevIndex + 1) % textArray.length);
-      }
-      if (isDeleting) {
-        setTypetext((text) => text.slice(0, Math.max(0, textIndex - 1)));
-        setTextIndex((prevIndex) => Math.max(0, prevIndex - 1));
-      } else {
-        setTypetext((text) => text + textArray[textArrayIndex][textIndex]);
-        setTextIndex((prevIndex) => prevIndex + 1);
-      }
-    }, 150);
-    return () => clearTimeout(typingTimeout);
-  }, [typetext, textIndex, isDeleting, textArrayIndex, textArray]);
-
   return (
     <Flex
       direction={{ base: "column", md: "row", lg: "row" }}
@@ -64,9 +34,8 @@ const Home = () => {
               <Text>I&apos;m </Text>
               <Text color="#F56E0F">Harshit Joshi</Text>
             </HStack>
-            <Text fontSize={{ base: "30px", md: "35px" }} color="#F56E0F">
-              {typetext}|
-            </Text>
+            <Typewriter />
+
             <HStack pt={5} gap={3}>
               <Link
                 href="https://www.linkedin.com/in/harshit-joshi-40953321b/"
