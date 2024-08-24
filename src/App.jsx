@@ -3,6 +3,9 @@ import { VStack } from "@chakra-ui/react";
 import PreLoader from "./components/PreLoader";
 import Starfield from "react-starfield";
 import { Suspense, lazy } from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 const Home = lazy(() => import("./components/Home"));
 const Navbar = lazy(() => import("./components/Navbar"));
 const About = lazy(() => import("./components/About"));
@@ -39,6 +42,8 @@ function App() {
         <Contact />
         <Footer />
       </VStack>
+      <Analytics />
+      <SpeedInsights />
     </Suspense>
   );
 }
